@@ -1,0 +1,1103 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suppliers | B2B Procurement Platform</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Main favicon -->
+  <link rel="icon" href="favicon.ico" />
+
+  <!-- webp favicons -->
+  <link rel="icon" type="image/webp" sizes="16x16" href="assets/images/favicon-16x16.png" />
+  <link rel="icon" type="image/webp" sizes="32x32" href="assets/images/favicon-32x32.png" />
+
+  <!-- Apple -->
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+
+  <!-- Android -->
+  <link rel="icon" type="image/webp" sizes="192x192" href="assets/images/android-chrome-192x192.png" />
+  <link rel="icon" type="image/webp" sizes="512x512" href="assets/images/android-chrome-512x512.png" />
+
+  <!-- Manifest -->
+  <link rel="manifest" href="assets/images/site.webmanifest" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!--- Bootstrap Icon --->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <link rel="stylesheet" href="assets/css/loader.css" />
+  <link rel="stylesheet" href="assets/css/navbar.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+  <!--- Loader Start --->
+  <div class="bp-ldr-loader" id="bp-ldr-loader" role="status" aria-live="polite" aria-label="Loading Stackly">
+    <div class="bp-ldr-background" aria-hidden="true">
+      <span class="bp-ldr-orb bp-ldr-orb-one"></span>
+      <span class="bp-ldr-orb bp-ldr-orb-two"></span>
+      <div class="bp-ldr-grid"></div>
+      <div class="bp-ldr-particles" id="bp-ldr-particles"></div>
+    </div>
+    <div class="bp-ldr-content">
+      <a href="index.html" class="bp-ldr-brand" aria-label="Stackly home">
+        <img src="assets/images/brand-logo.webp" alt="Stackly" class="bp-ldr-logo">
+      </a>
+      <div class="bp-ldr-animation" aria-hidden="true">
+        <div class="bp-ldr-ring bp-ldr-ring-outer"></div>
+        <div class="bp-ldr-ring bp-ldr-ring-middle"></div>
+        <div class="bp-ldr-ring bp-ldr-ring-inner"></div>
+        <div class="bp-ldr-icon-wrap">
+          <i class="bi bi-box-seam bp-ldr-main-icon"></i>
+        </div>
+        <span class="bp-ldr-orbit-dot bp-ldr-dot-one"></span>
+        <span class="bp-ldr-orbit-dot bp-ldr-dot-two"></span>
+        <span class="bp-ldr-orbit-dot bp-ldr-dot-three"></span>
+      </div>
+      <div class="bp-ldr-copy">
+        <span class="bp-ldr-eyebrow"><span class="bp-ldr-status-dot"></span> SMARTER PROCUREMENT</span>
+        <h2 class="bp-ldr-title">Business in motion<span>.</span></h2>
+        <p class="bp-ldr-message" id="bp-ldr-message">Connecting your business...</p>
+      </div>
+      <div class="bp-ldr-bottom">
+        <span>BUY SMARTER</span>
+        <span class="bp-ldr-bottom-line"></span>
+        <span>BUILD STRONGER</span>
+      </div>
+    </div>
+  </div>
+  <!--- Loader End --->
+
+  <!--- Navbar Component --->
+  <div id="bp-com-navbar-container"></div>
+
+  <!--- Sub Hero Section Start --->
+  <section class="bp-com-hero" id="bp-com-hero" data-bp-hero>
+    <div class="bp-com-hero-bg" aria-hidden="true">
+      <span class="bp-com-hero-glow bp-com-hero-glow-one"></span>
+      <span class="bp-com-hero-glow bp-com-hero-glow-two"></span>
+      <div class="bp-com-hero-grid"></div>
+      <span class="bp-com-hero-orb bp-com-hero-orb-one"></span>
+      <span class="bp-com-hero-orb bp-com-hero-orb-two"></span>
+    </div>
+    <div class="container">
+      <div class="bp-com-hero-layout">
+        <div class="bp-com-hero-content">
+          <nav class="bp-com-hero-breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html"><i class="bi bi-house-door"></i> Home</a>
+            <i class="bi bi-chevron-right bp-com-hero-breadcrumb-separator" aria-hidden="true"></i>
+            <span aria-current="page">Solution</span>
+          </nav>
+          <div class="bp-com-hero-eyebrow"><span class="bp-com-hero-eyebrow-dot"></span><span>GET TO KNOW
+              STACKLY</span><span class="bp-com-hero-eyebrow-line"></span></div>
+          <h1 class="bp-com-hero-title">Building a smarter future for <span>business procurement.</span></h1>
+          <p class="bp-com-hero-description">Discover a more connected way to manage purchasing, explore
+            supplier opportunities, and bring business workflows together on one platform.</p>
+          <div class="bp-com-hero-actions">
+            <a href="404.html" class="bp-com-hero-primary-btn">Explore our solutions <i
+                class="bi bi-arrow-up-right"></i></a>
+            <a href="404.html" class="bp-com-hero-secondary-btn"><span class="bp-com-hero-play-icon"><i
+                  class="bi bi-chat-square-text"></i></span> Talk to our team</a>
+          </div>
+          <div class="bp-com-hero-highlights">
+            <div class="bp-com-hero-highlight"><span class="bp-com-hero-highlight-icon"><i
+                  class="bi bi-diagram-3"></i></span><span><strong>Connected</strong><small>Business
+                  workflows</small></span></div>
+            <span class="bp-com-hero-highlight-divider"></span>
+            <div class="bp-com-hero-highlight"><span
+                class="bp-com-hero-highlight-icon bp-com-hero-highlight-icon-teal"><i
+                  class="bi bi-box-seam"></i></span><span><strong>Organized</strong><small>Procurement
+                  journey</small></span></div>
+          </div>
+        </div>
+        <div class="bp-com-hero-visual" data-bp-hero-visual>
+          <div class="bp-com-hero-visual-orbit bp-com-hero-visual-orbit-one"></div>
+          <div class="bp-com-hero-visual-orbit bp-com-hero-visual-orbit-two"></div>
+          <div class="bp-com-hero-visual-orbit bp-com-hero-visual-orbit-three"></div>
+          <div class="bp-com-hero-dashboard">
+            <div class="bp-com-hero-dashboard-top">
+              <div class="bp-com-hero-dashboard-brand"><span class="bp-com-hero-dashboard-brand-icon"><i
+                    class="bi bi-box-seam"></i></span><span><strong>Stackly</strong><small>PROCUREMENT
+                    WORKSPACE</small></span></div>
+              <button type="button" class="bp-com-hero-dashboard-menu" aria-label="Show workspace overview"
+                data-bp-hero-demo><i class="bi bi-three-dots"></i></button>
+            </div>
+            <div class="bp-com-hero-dashboard-welcome"><span>YOUR WORKSPACE</span><strong>Everything,
+                connected.</strong><small>One clearer view of your procurement journey.</small></div>
+            <div class="bp-com-hero-dashboard-stats">
+              <div class="bp-com-hero-stat"><span class="bp-com-hero-stat-icon"><i
+                    class="bi bi-search"></i></span><span><small>SOURCING</small><strong>Discover</strong></span><i
+                  class="bi bi-arrow-up-right"></i></div>
+              <div class="bp-com-hero-stat"><span class="bp-com-hero-stat-icon bp-com-hero-stat-teal"><i
+                    class="bi bi-receipt"></i></span><span><small>ORDERS</small><strong>Organize</strong></span><i
+                  class="bi bi-arrow-up-right"></i></div>
+            </div>
+            <div class="bp-com-hero-dashboard-workflow">
+              <div class="bp-com-hero-workflow-heading"><strong>Procurement
+                  workflow</strong><span>OVERVIEW</span></div>
+              <div class="bp-com-hero-workflow-step"><span class="bp-com-hero-workflow-number">01</span><span
+                  class="bp-com-hero-workflow-copy"><strong>Discover suppliers</strong><small>Explore
+                    available options</small></span><i class="bi bi-check-circle-fill"></i></div>
+              <div class="bp-com-hero-workflow-step"><span
+                  class="bp-com-hero-workflow-number bp-com-hero-workflow-number-teal">02</span><span
+                  class="bp-com-hero-workflow-copy"><strong>Manage purchasing</strong><small>Keep
+                    requests organized</small></span><i class="bi bi-arrow-up-right"></i></div>
+              <div class="bp-com-hero-workflow-step"><span
+                  class="bp-com-hero-workflow-number bp-com-hero-workflow-number-amber">03</span><span
+                  class="bp-com-hero-workflow-copy"><strong>Connect your teams</strong><small>Move
+                    work forward together</small></span><i class="bi bi-arrow-up-right"></i></div>
+            </div>
+            <div class="bp-com-hero-dashboard-footer"><span
+                class="bp-com-hero-dashboard-status-dot"></span><span>Designed for connected
+                procurement</span><i class="bi bi-shield-check"></i></div>
+          </div>
+          <div class="bp-com-hero-float-card bp-com-hero-float-supplier"><span class="bp-com-hero-float-icon"><i
+                class="bi bi-buildings"></i></span><span><strong>Supplier
+                network</strong><small>Discover new connections</small></span><i class="bi bi-check-circle-fill"></i>
+          </div>
+          <div class="bp-com-hero-float-card bp-com-hero-float-orders"><span
+              class="bp-com-hero-float-icon bp-com-hero-float-icon-teal"><i
+                class="bi bi-clipboard-check"></i></span><span><strong>Orders in one
+                place</strong><small>Stay organized</small></span></div>
+          <div class="bp-com-hero-visual-caption"><span class="bp-com-hero-caption-icon"><i
+                class="bi bi-stars"></i></span><span><strong>Procurement,
+                reimagined.</strong><small>Less fragmentation. More connection.</small></span></div>
+          <span class="bp-com-hero-visual-dot bp-com-hero-visual-dot-one"></span>
+          <span class="bp-com-hero-visual-dot bp-com-hero-visual-dot-two"></span>
+        </div>
+      </div>
+      <div class="bp-com-hero-bottom">
+        <span class="bp-com-hero-bottom-label">A BETTER WAY TO WORK</span>
+        <span class="bp-com-hero-bottom-line"></span>
+        <div class="bp-com-hero-bottom-item"><i class="bi bi-search"></i> Smarter sourcing</div>
+        <div class="bp-com-hero-bottom-item"><i class="bi bi-arrow-left-right"></i> Better collaboration</div>
+        <div class="bp-com-hero-bottom-item"><i class="bi bi-layers"></i> Connected workflows</div>
+      </div>
+    </div>
+  </section>
+  <!--- Sub Hero Section End --->
+
+  <!--- Why Become a Stackly Supplier? Section Start --->
+  <section class="bp-sup-benefits-section" id="supplier-benefits">
+    <div class="container">
+      <div class="bp-sup-benefits-layout">
+
+        <!--- Benefits Content --->
+        <div class="bp-sup-benefits-content">
+          <span class="bp-sup-benefits-eyebrow">
+            <span class="bp-sup-benefits-eyebrow-line"></span>
+            WHY STACKLY
+          </span>
+
+          <h2 class="bp-sup-benefits-heading">
+            More than a platform.
+            <span>A smarter way to grow.</span>
+          </h2>
+
+          <p class="bp-sup-benefits-description">
+            Your business deserves the right opportunities and tools to move forward.
+            Stackly brings supplier management, product visibility and buyer
+            collaboration together in one connected workspace.
+          </p>
+
+          <!--- Benefit Items --->
+          <div class="bp-sup-benefits-list">
+
+            <div class="bp-sup-benefit-item">
+              <div class="bp-sup-benefit-icon">
+                <i class="bi bi-globe2"></i>
+              </div>
+              <div class="bp-sup-benefit-info">
+                <h3>Expand Your Business Reach</h3>
+                <p>
+                  Make your business and products easier for purchasing
+                  teams to discover through your supplier profile.
+                </p>
+              </div>
+              <span class="bp-sup-benefit-number">01</span>
+            </div>
+
+            <div class="bp-sup-benefit-item">
+              <div class="bp-sup-benefit-icon">
+                <i class="bi bi-box-seam"></i>
+              </div>
+              <div class="bp-sup-benefit-info">
+                <h3>Showcase Your Products</h3>
+                <p>
+                  Organize your product listings and catalogs to present
+                  your offerings clearly to potential business buyers.
+                </p>
+              </div>
+              <span class="bp-sup-benefit-number">02</span>
+            </div>
+
+            <div class="bp-sup-benefit-item">
+              <div class="bp-sup-benefit-icon">
+                <i class="bi bi-clipboard2-check"></i>
+              </div>
+              <div class="bp-sup-benefit-info">
+                <h3>Simplify Order Management</h3>
+                <p>
+                  Keep purchase order information organized and follow
+                  order progress from one convenient workspace.
+                </p>
+              </div>
+              <span class="bp-sup-benefit-number">03</span>
+            </div>
+
+            <div class="bp-sup-benefit-item">
+              <div class="bp-sup-benefit-icon">
+                <i class="bi bi-people"></i>
+              </div>
+              <div class="bp-sup-benefit-info">
+                <h3>Build Stronger Connections</h3>
+                <p>
+                  Bring buyer communication and supplier collaboration
+                  closer together for smoother business coordination.
+                </p>
+              </div>
+              <span class="bp-sup-benefit-number">04</span>
+            </div>
+
+          </div>
+
+          <!--- Benefits CTA --->
+          <a href="404.html" class="bp-sup-benefits-link">
+            Become a Stackly Supplier
+            <span class="bp-sup-benefits-link-icon">
+              <i class="bi bi-arrow-up-right"></i>
+            </span>
+          </a>
+        </div>
+
+        <!--- Benefits Visual --->
+        <div class="bp-sup-benefits-visual">
+
+          <div class="bp-sup-benefits-visual-glow"></div>
+          <div class="bp-sup-benefits-visual-grid"></div>
+
+          <!--- Main Workspace Card --->
+          <div class="bp-sup-benefits-workspace">
+
+            <div class="bp-sup-benefits-workspace-top">
+              <div>
+                <span class="bp-sup-benefits-workspace-label">SUPPLIER WORKSPACE</span>
+                <h3>Your business, connected.</h3>
+              </div>
+              <span class="bp-sup-benefits-live">
+                <span></span> Workspace preview
+              </span>
+            </div>
+
+            <!--- Workspace Navigation --->
+            <div class="bp-sup-benefits-workspace-body">
+
+              <div class="bp-sup-benefits-sidebar">
+                <div class="bp-sup-benefits-sidebar-brand">
+                  <i class="bi bi-grid-1x2-fill"></i>
+                </div>
+                <span class="bp-sup-benefits-sidebar-item active">
+                  <i class="bi bi-house-door"></i>
+                </span>
+                <span class="bp-sup-benefits-sidebar-item">
+                  <i class="bi bi-box-seam"></i>
+                </span>
+                <span class="bp-sup-benefits-sidebar-item">
+                  <i class="bi bi-receipt"></i>
+                </span>
+                <span class="bp-sup-benefits-sidebar-item">
+                  <i class="bi bi-chat-left-text"></i>
+                </span>
+                <span class="bp-sup-benefits-sidebar-item">
+                  <i class="bi bi-gear"></i>
+                </span>
+              </div>
+
+              <!--- Workspace Main --->
+              <div class="bp-sup-benefits-dashboard">
+
+                <div class="bp-sup-benefits-dashboard-heading">
+                  <div>
+                    <span>OVERVIEW</span>
+                    <h4>Welcome to your workspace</h4>
+                  </div>
+                  <div class="bp-sup-benefits-avatar">S</div>
+                </div>
+
+                <!--- Workspace Stats --->
+                <div class="bp-sup-benefits-stats">
+
+                  <div class="bp-sup-benefits-stat-card">
+                    <span>Products</span>
+                    <div class="bp-sup-benefits-stat-value">
+                      <strong>128</strong>
+                      <i class="bi bi-box-seam"></i>
+                    </div>
+                    <small>Catalog overview</small>
+                  </div>
+
+                  <div class="bp-sup-benefits-stat-card">
+                    <span>Orders</span>
+                    <div class="bp-sup-benefits-stat-value">
+                      <strong>24</strong>
+                      <i class="bi bi-receipt"></i>
+                    </div>
+                    <small>Order overview</small>
+                  </div>
+
+                </div>
+
+                <!--- Workspace Activity --->
+                <div class="bp-sup-benefits-activity">
+                  <div class="bp-sup-benefits-activity-heading">
+                    <strong>Business activity</strong>
+                    <span>Recent overview</span>
+                  </div>
+
+                  <div class="bp-sup-benefits-activity-row">
+                    <div class="bp-sup-benefits-activity-icon product">
+                      <i class="bi bi-box-seam"></i>
+                    </div>
+                    <div class="bp-sup-benefits-activity-info">
+                      <strong>Product catalog</strong>
+                      <span>Manage your product listings</span>
+                    </div>
+                    <i class="bi bi-arrow-up-right"></i>
+                  </div>
+
+                  <div class="bp-sup-benefits-activity-row">
+                    <div class="bp-sup-benefits-activity-icon order">
+                      <i class="bi bi-clipboard-check"></i>
+                    </div>
+                    <div class="bp-sup-benefits-activity-info">
+                      <strong>Purchase orders</strong>
+                      <span>Review and organize orders</span>
+                    </div>
+                    <i class="bi bi-arrow-up-right"></i>
+                  </div>
+
+                  <div class="bp-sup-benefits-activity-row">
+                    <div class="bp-sup-benefits-activity-icon buyer">
+                      <i class="bi bi-people"></i>
+                    </div>
+                    <div class="bp-sup-benefits-activity-info">
+                      <strong>Buyer connections</strong>
+                      <span>Keep business conversations organized</span>
+                    </div>
+                    <i class="bi bi-arrow-up-right"></i>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!--- Floating Connection Card --->
+          <div class="bp-sup-benefits-float-card bp-sup-benefits-float-one">
+            <div class="bp-sup-benefits-float-icon">
+              <i class="bi bi-diagram-3"></i>
+            </div>
+            <div>
+              <strong>One connected workspace</strong>
+              <span>Products, orders and buyers</span>
+            </div>
+          </div>
+
+          <!--- Floating Product Card --->
+          <div class="bp-sup-benefits-float-card bp-sup-benefits-float-two">
+            <div class="bp-sup-benefits-float-icon secondary">
+              <i class="bi bi-boxes"></i>
+            </div>
+            <div>
+              <strong>Organized catalog</strong>
+              <span>Your products in one place</span>
+            </div>
+          </div>
+
+          <span class="bp-sup-benefits-visual-caption">
+            <i class="bi bi-shield-check"></i>
+            Built for better business coordination
+          </span>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--- Why Become a Stackly Supplier? Section End --->
+
+  <!--- Supplier Platform Features Section Start --->
+
+  <!--- Supplier Platform Features Section --->
+  <section class="bp-sup-platform-section" id="supplier-platform">
+    <div class="container">
+
+      <!--- Section Heading --->
+      <div class="bp-sup-platform-heading">
+        <span class="bp-sup-platform-eyebrow">
+          <span></span> YOUR SUPPLIER TOOLKIT
+        </span>
+        <h2>Everything you need to manage your business.
+          <span>All in one place.</span>
+        </h2>
+        <p>
+          From showcasing your products to managing purchase orders,
+          Stackly gives suppliers a connected workspace to organize
+          everyday business activities.
+        </p>
+      </div>
+
+      <!--- Platform Features Layout --->
+      <div class="bp-sup-platform-layout">
+
+        <!--- Feature Card One --->
+        <article class="bp-sup-platform-card bp-sup-platform-card-one">
+          <div class="bp-sup-platform-card-top">
+            <div class="bp-sup-platform-icon">
+              <i class="bi bi-box-seam"></i>
+            </div>
+            <span class="bp-sup-platform-card-number">01</span>
+          </div>
+          <h3>Product & Catalog Management</h3>
+          <p>
+            Organize your products, add essential details and
+            present your catalog in a clear, professional format.
+          </p>
+          <div class="bp-sup-platform-product-preview">
+            <div class="bp-sup-platform-product-item">
+              <div class="bp-sup-platform-product-icon">
+                <i class="bi bi-cpu"></i>
+              </div>
+              <div>
+                <strong>Electronic Components</strong>
+                <span>Product category</span>
+              </div>
+              <i class="bi bi-check-circle-fill"></i>
+            </div>
+            <div class="bp-sup-platform-product-item">
+              <div class="bp-sup-platform-product-icon green">
+                <i class="bi bi-tools"></i>
+              </div>
+              <div>
+                <strong>Industrial Supplies</strong>
+                <span>Product category</span>
+              </div>
+              <i class="bi bi-check-circle-fill"></i>
+            </div>
+          </div>
+          <a href="404.html" class="bp-sup-platform-card-link">
+            Explore product management <i class="bi bi-arrow-up-right"></i>
+          </a>
+        </article>
+
+        <!--- Feature Card Two --->
+        <article class="bp-sup-platform-card bp-sup-platform-card-two">
+          <div class="bp-sup-platform-card-top">
+            <div class="bp-sup-platform-icon">
+              <i class="bi bi-clipboard2-check"></i>
+            </div>
+            <span class="bp-sup-platform-card-number">02</span>
+          </div>
+          <h3>Purchase Order Management</h3>
+          <p>
+            Keep purchase order details organized and follow
+            order progress through a structured workflow.
+          </p>
+          <div class="bp-sup-platform-order-preview">
+            <div class="bp-sup-platform-order-header">
+              <span>ORDER OVERVIEW</span>
+              <span class="bp-sup-platform-order-status">In progress</span>
+            </div>
+            <div class="bp-sup-platform-order-id">
+              <strong>PO-2026-048</strong>
+              <span>Purchase order</span>
+            </div>
+            <div class="bp-sup-platform-order-progress">
+              <div><span></span></div>
+            </div>
+            <div class="bp-sup-platform-order-footer">
+              <span>Order progress</span>
+              <strong>68%</strong>
+            </div>
+          </div>
+          <a href="404.html" class="bp-sup-platform-card-link">
+            Explore order management <i class="bi bi-arrow-up-right"></i>
+          </a>
+        </article>
+
+        <!--- Feature Card Three --->
+        <article class="bp-sup-platform-card bp-sup-platform-card-three">
+          <div class="bp-sup-platform-card-top">
+            <div class="bp-sup-platform-icon">
+              <i class="bi bi-building"></i>
+            </div>
+            <span class="bp-sup-platform-card-number">03</span>
+          </div>
+          <h3>Supplier Profile Management</h3>
+          <p>
+            Present your business identity, capabilities and
+            important company information in one organized profile.
+          </p>
+          <div class="bp-sup-platform-profile-preview">
+            <div class="bp-sup-platform-profile-avatar">
+              <i class="bi bi-buildings"></i>
+            </div>
+            <div class="bp-sup-platform-profile-info">
+              <strong>Your Business Name</strong>
+              <span>Supplier profile preview</span>
+              <div class="bp-sup-platform-profile-tags">
+                <span>Business details</span>
+                <span>Capabilities</span>
+              </div>
+            </div>
+            <div class="bp-sup-platform-profile-edit">
+              <i class="bi bi-pencil-square"></i>
+            </div>
+          </div>
+          <a href="404.html" class="bp-sup-platform-card-link">
+            Create your supplier profile <i class="bi bi-arrow-up-right"></i>
+          </a>
+        </article>
+
+        <!--- Feature Card Four --->
+        <article class="bp-sup-platform-card bp-sup-platform-card-four">
+          <div class="bp-sup-platform-card-top">
+            <div class="bp-sup-platform-icon">
+              <i class="bi bi-chat-square-dots"></i>
+            </div>
+            <span class="bp-sup-platform-card-number">04</span>
+          </div>
+          <h3>Buyer Communication</h3>
+          <p>
+            Keep buyer conversations and business coordination
+            connected to your supplier activities.
+          </p>
+          <div class="bp-sup-platform-chat-preview">
+            <div class="bp-sup-platform-chat-top">
+              <div class="bp-sup-platform-chat-avatar">B</div>
+              <div>
+                <strong>Business Buyer</strong>
+                <span><i></i> Conversation preview</span>
+              </div>
+            </div>
+            <div class="bp-sup-platform-chat-message">
+              Hello, we'd like to know more about your product catalog.
+            </div>
+            <div class="bp-sup-platform-chat-reply">
+              Thank you! We would be happy to share the details.
+            </div>
+          </div>
+          <a href="404.html" class="bp-sup-platform-card-link">
+            Discover collaboration <i class="bi bi-arrow-up-right"></i>
+          </a>
+        </article>
+
+      </div>
+
+      <!--- Platform Bottom Banner --->
+      <div class="bp-sup-platform-bottom">
+        <div class="bp-sup-platform-bottom-icon">
+          <i class="bi bi-grid-1x2"></i>
+        </div>
+        <div class="bp-sup-platform-bottom-content">
+          <strong>One connected supplier workspace.</strong>
+          <span>Bring your products, orders and business relationships together.</span>
+        </div>
+        <a href="404.html">
+          Get started <i class="bi bi-arrow-up-right"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+  <!--- Supplier Platform Features Section End --->
+
+  <!--- How It Works for Suppliers Section Start --->
+  <section class="bp-sup-process-section" id="supplier-process">
+    <div class="container">
+
+      <!--- Section Heading --->
+      <div class="bp-sup-process-heading">
+        <span class="bp-sup-process-eyebrow">
+          <span></span> YOUR JOURNEY WITH STACKLY
+        </span>
+        <h2>Getting started is
+          <span>simpler than you think.</span>
+        </h2>
+        <p>
+          Join the Stackly supplier network in a few simple steps.
+          Set up your business, showcase your offerings and start
+          building meaningful business connections.
+        </p>
+      </div>
+
+      <!--- Process Timeline --->
+      <div class="bp-sup-process-timeline">
+
+        <!--- Step One --->
+        <article class="bp-sup-process-step">
+          <div class="bp-sup-process-step-top">
+            <span class="bp-sup-process-step-number">01</span>
+            <div class="bp-sup-process-step-icon">
+              <i class="bi bi-person-plus"></i>
+            </div>
+          </div>
+
+          <div class="bp-sup-process-step-content">
+            <span class="bp-sup-process-step-label">GET STARTED</span>
+            <h3>Create Your Account</h3>
+            <p>
+              Register your business on Stackly and create
+              your supplier account to get started.
+            </p>
+          </div>
+
+          <!--- Registration Preview --->
+          <div class="bp-sup-process-preview bp-sup-process-register-preview">
+            <div class="bp-sup-process-preview-heading">
+              <span>ACCOUNT SETUP</span>
+              <i class="bi bi-shield-check"></i>
+            </div>
+            <div class="bp-sup-process-input">
+              <i class="bi bi-envelope"></i>
+              <span>Business email address</span>
+            </div>
+            <div class="bp-sup-process-input">
+              <i class="bi bi-lock"></i>
+              <span>Create password</span>
+            </div>
+            <div class="bp-sup-process-preview-button">
+              Create supplier account
+              <i class="bi bi-arrow-right"></i>
+            </div>
+          </div>
+
+          <div class="bp-sup-process-step-footer">
+            <i class="bi bi-check-circle-fill"></i>
+            A simple starting point
+          </div>
+        </article>
+
+        <!--- Step Two --->
+        <article class="bp-sup-process-step">
+          <div class="bp-sup-process-step-top">
+            <span class="bp-sup-process-step-number">02</span>
+            <div class="bp-sup-process-step-icon">
+              <i class="bi bi-building"></i>
+            </div>
+          </div>
+
+          <div class="bp-sup-process-step-content">
+            <span class="bp-sup-process-step-label">SET UP YOUR BUSINESS</span>
+            <h3>Build Your Supplier Profile</h3>
+            <p>
+              Add your company information, business details
+              and capabilities to introduce your business.
+            </p>
+          </div>
+
+          <!--- Profile Preview --->
+          <div class="bp-sup-process-preview bp-sup-process-profile-preview">
+            <div class="bp-sup-process-profile-top">
+              <div class="bp-sup-process-profile-avatar">
+                <i class="bi bi-buildings"></i>
+              </div>
+              <div>
+                <strong>Your Company</strong>
+                <span>Supplier profile</span>
+              </div>
+              <i class="bi bi-pencil-square"></i>
+            </div>
+            <div class="bp-sup-process-profile-fields">
+              <div>
+                <span>Business information</span>
+                <i class="bi bi-check-circle-fill"></i>
+              </div>
+              <div>
+                <span>Company capabilities</span>
+                <i class="bi bi-check-circle-fill"></i>
+              </div>
+              <div>
+                <span>Contact details</span>
+                <i class="bi bi-check-circle-fill"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="bp-sup-process-step-footer">
+            <i class="bi bi-check-circle-fill"></i>
+            Present your business clearly
+          </div>
+        </article>
+
+        <!--- Step Three --->
+        <article class="bp-sup-process-step">
+          <div class="bp-sup-process-step-top">
+            <span class="bp-sup-process-step-number">03</span>
+            <div class="bp-sup-process-step-icon">
+              <i class="bi bi-box-seam"></i>
+            </div>
+          </div>
+
+          <div class="bp-sup-process-step-content">
+            <span class="bp-sup-process-step-label">SHOWCASE YOUR OFFERINGS</span>
+            <h3>Add Your Products</h3>
+            <p>
+              Create organized product listings with descriptions,
+              categories and relevant product information.
+            </p>
+          </div>
+
+          <!--- Products Preview --->
+          <div class="bp-sup-process-preview bp-sup-process-products-preview">
+            <div class="bp-sup-process-preview-heading">
+              <span>PRODUCT CATALOG</span>
+              <span class="bp-sup-process-add-icon">
+                <i class="bi bi-plus-lg"></i> Add
+              </span>
+            </div>
+            <div class="bp-sup-process-product-row">
+              <div class="bp-sup-process-product-icon blue">
+                <i class="bi bi-cpu"></i>
+              </div>
+              <div>
+                <strong>Electronic Components</strong>
+                <span>Product category</span>
+              </div>
+            </div>
+            <div class="bp-sup-process-product-row">
+              <div class="bp-sup-process-product-icon green">
+                <i class="bi bi-tools"></i>
+              </div>
+              <div>
+                <strong>Industrial Supplies</strong>
+                <span>Product category</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bp-sup-process-step-footer">
+            <i class="bi bi-check-circle-fill"></i>
+            Keep your offerings organized
+          </div>
+        </article>
+
+        <!--- Step Four --->
+        <article class="bp-sup-process-step">
+          <div class="bp-sup-process-step-top">
+            <span class="bp-sup-process-step-number">04</span>
+            <div class="bp-sup-process-step-icon">
+              <i class="bi bi-people"></i>
+            </div>
+          </div>
+
+          <div class="bp-sup-process-step-content">
+            <span class="bp-sup-process-step-label">GROW YOUR CONNECTIONS</span>
+            <h3>Connect & Manage Orders</h3>
+            <p>
+              Engage with business buyers, coordinate conversations
+              and organize purchase order activities.
+            </p>
+          </div>
+
+          <!--- Collaboration Preview --->
+          <div class="bp-sup-process-preview bp-sup-process-connect-preview">
+            <div class="bp-sup-process-preview-heading">
+              <span>BUSINESS CONNECTIONS</span>
+              <i class="bi bi-chat-square-dots"></i>
+            </div>
+            <div class="bp-sup-process-connect-person">
+              <div class="bp-sup-process-connect-avatar">B</div>
+              <div>
+                <strong>Business Buyer</strong>
+                <span>Buyer communication</span>
+              </div>
+              <span class="bp-sup-process-connect-status">Connected</span>
+            </div>
+            <div class="bp-sup-process-connect-order">
+              <div>
+                <i class="bi bi-clipboard2-check"></i>
+                <span>Purchase order workflow</span>
+              </div>
+              <i class="bi bi-arrow-up-right"></i>
+            </div>
+          </div>
+
+          <div class="bp-sup-process-step-footer">
+            <i class="bi bi-check-circle-fill"></i>
+            Keep business moving forward
+          </div>
+        </article>
+
+      </div>
+
+      <!--- Process Bottom CTA --->
+      <div class="bp-sup-process-bottom">
+        <div class="bp-sup-process-bottom-content">
+          <div class="bp-sup-process-bottom-icon">
+            <i class="bi bi-rocket-takeoff"></i>
+          </div>
+          <div>
+            <h3>Ready to get your business started?</h3>
+            <p>Take the first step towards a more connected way of doing business.</p>
+          </div>
+        </div>
+        <a href="404.html" class="bp-sup-process-cta">
+          Join Stackly Today
+          <i class="bi bi-arrow-up-right"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+  <!--- How It Works for Suppliers Section End --->
+
+  <!--- Connect with Business Buyers Section Start --->
+  <section class="bp-sup-connect-section" id="connect-buyers">
+    <div class="container">
+      <div class="bp-sup-connect-layout">
+
+        <!--- Connection Content --->
+        <div class="bp-sup-connect-content">
+          <span class="bp-sup-connect-eyebrow">
+            <span></span> BUSINESS CONNECTIONS
+          </span>
+
+          <h2 class="bp-sup-connect-heading">
+            The right connections
+            <span>can move business forward.</span>
+          </h2>
+
+          <p class="bp-sup-connect-description">
+            Bring your business closer to purchasing teams looking
+            for products and supplier partnerships. Stackly creates
+            a connected space where buyers and suppliers can discover
+            opportunities and coordinate their business activities.
+          </p>
+
+          <!--- Connection Benefits --->
+          <div class="bp-sup-connect-benefits">
+
+            <div class="bp-sup-connect-benefit">
+              <div class="bp-sup-connect-benefit-icon">
+                <i class="bi bi-search"></i>
+              </div>
+              <div>
+                <h3>Improve Business Visibility</h3>
+                <p>
+                  Present your company and product offerings
+                  through an organized supplier profile.
+                </p>
+              </div>
+            </div>
+
+            <div class="bp-sup-connect-benefit">
+              <div class="bp-sup-connect-benefit-icon">
+                <i class="bi bi-buildings"></i>
+              </div>
+              <div>
+                <h3>Reach Purchasing Teams</h3>
+                <p>
+                  Make it easier for business buyers to explore
+                  your supplier information and capabilities.
+                </p>
+              </div>
+            </div>
+
+            <div class="bp-sup-connect-benefit">
+              <div class="bp-sup-connect-benefit-icon">
+                <i class="bi bi-chat-square-dots"></i>
+              </div>
+              <div>
+                <h3>Encourage Direct Collaboration</h3>
+                <p>
+                  Keep business conversations and coordination
+                  connected to your supplier activities.
+                </p>
+              </div>
+            </div>
+
+            <div class="bp-sup-connect-benefit">
+              <div class="bp-sup-connect-benefit-icon">
+                <i class="bi bi-arrow-left-right"></i>
+              </div>
+              <div>
+                <h3>Coordinate Business Activities</h3>
+                <p>
+                  Bring product discussions, buyer inquiries
+                  and purchase orders into a connected workflow.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <a href="404.html" class="bp-sup-connect-link">
+            Join the Supplier Network
+            <span><i class="bi bi-arrow-up-right"></i></span>
+          </a>
+        </div>
+
+        <!--- Connection Visual --->
+        <div class="bp-sup-connect-visual">
+
+          <div class="bp-sup-connect-visual-glow"></div>
+          <div class="bp-sup-connect-visual-grid"></div>
+
+          <!--- Network Illustration --->
+          <div class="bp-sup-connect-network">
+
+            <svg class="bp-sup-connect-lines" viewBox="0 0 600 530" fill="none" aria-hidden="true">
+              <path class="bp-sup-connect-line bp-sup-connect-line-one" d="M300 260 L135 125" />
+              <path class="bp-sup-connect-line bp-sup-connect-line-two" d="M300 260 L470 125" />
+              <path class="bp-sup-connect-line bp-sup-connect-line-three" d="M300 260 L135 405" />
+              <path class="bp-sup-connect-line bp-sup-connect-line-four" d="M300 260 L470 405" />
+              <circle cx="135" cy="125" r="5" fill="#2855E8" />
+              <circle cx="470" cy="125" r="5" fill="#0F766E" />
+              <circle cx="135" cy="405" r="5" fill="#0F766E" />
+              <circle cx="470" cy="405" r="5" fill="#2855E8" />
+            </svg>
+
+            <!--- Top Left Business Node --->
+            <div class="bp-sup-connect-node bp-sup-connect-node-one">
+              <div class="bp-sup-connect-node-icon blue">
+                <i class="bi bi-building"></i>
+              </div>
+              <div>
+                <strong>Business Buyers</strong>
+                <span>Purchasing teams</span>
+              </div>
+              <span class="bp-sup-connect-node-dot"></span>
+            </div>
+
+            <!--- Top Right Business Node --->
+            <div class="bp-sup-connect-node bp-sup-connect-node-two">
+              <div class="bp-sup-connect-node-icon green">
+                <i class="bi bi-box-seam"></i>
+              </div>
+              <div>
+                <strong>Product Catalog</strong>
+                <span>Supplier offerings</span>
+              </div>
+              <span class="bp-sup-connect-node-dot"></span>
+            </div>
+
+            <!--- Bottom Left Business Node --->
+            <div class="bp-sup-connect-node bp-sup-connect-node-three">
+              <div class="bp-sup-connect-node-icon amber">
+                <i class="bi bi-chat-left-text"></i>
+              </div>
+              <div>
+                <strong>Buyer Inquiries</strong>
+                <span>Business conversations</span>
+              </div>
+              <span class="bp-sup-connect-node-dot"></span>
+            </div>
+
+            <!--- Bottom Right Business Node --->
+            <div class="bp-sup-connect-node bp-sup-connect-node-four">
+              <div class="bp-sup-connect-node-icon purple">
+                <i class="bi bi-clipboard-check"></i>
+              </div>
+              <div>
+                <strong>Order Coordination</strong>
+                <span>Purchase workflows</span>
+              </div>
+              <span class="bp-sup-connect-node-dot"></span>
+            </div>
+
+            <!--- Central Stackly Network --->
+            <div class="bp-sup-connect-center">
+              <div class="bp-sup-connect-center-ring bp-sup-connect-ring-one"></div>
+              <div class="bp-sup-connect-center-ring bp-sup-connect-ring-two"></div>
+              <div class="bp-sup-connect-center-logo">
+                <i class="bi bi-diagram-3"></i>
+              </div>
+              <strong>Stackly</strong>
+              <span>CONNECTED BUSINESS</span>
+            </div>
+
+            <!--- Floating Buyer Inquiry --->
+            <div class="bp-sup-connect-float bp-sup-connect-inquiry">
+              <div class="bp-sup-connect-float-icon">
+                <i class="bi bi-envelope-open"></i>
+              </div>
+              <div>
+                <strong>Buyer inquiry</strong>
+                <span>Product information request</span>
+              </div>
+              <i class="bi bi-arrow-up-right bp-sup-connect-float-arrow"></i>
+            </div>
+
+            <!--- Floating Connection Status --->
+            <div class="bp-sup-connect-float bp-sup-connect-status">
+              <span class="bp-sup-connect-status-dot"></span>
+              <div>
+                <strong>Business collaboration</strong>
+                <span>Connected workspace</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="bp-sup-connect-visual-caption">
+            <i class="bi bi-diagram-3"></i>
+            One platform. Connected business relationships.
+          </div>
+        </div>
+
+      </div>
+
+      <!--- Connection Bottom Banner --->
+      <div class="bp-sup-connect-bottom">
+        <div class="bp-sup-connect-bottom-content">
+          <div class="bp-sup-connect-bottom-icon">
+            <i class="bi bi-globe2"></i>
+          </div>
+          <div>
+            <h3>Make your business easier to discover.</h3>
+            <p>Create your supplier presence and bring your offerings to the Stackly platform.</p>
+          </div>
+        </div>
+        <a href="404.html">
+          Become a Supplier
+          <i class="bi bi-arrow-up-right"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+  <!--- Connect with Business Buyers Section End --->
+
+  <!--- Footer Component --->
+  <div id="bp-com-footer-container"></div>
+
+  <!--- Js Files --->
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/loader.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/footer.js"></script>
+
+  <!-- Page JS -->
+  <script src="assets/js/suppliers.js"></script>
+  <script src="assets/js/all-hero.js"></script>
+</body>
+
+</html>

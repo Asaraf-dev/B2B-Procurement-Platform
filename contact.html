@@ -1,0 +1,927 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | B2B Procurement Platform</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Main favicon -->
+  <link rel="icon" href="favicon.ico" />
+
+  <!-- webp favicons -->
+  <link rel="icon" type="image/webp" sizes="16x16" href="assets/images/favicon-16x16.png" />
+  <link rel="icon" type="image/webp" sizes="32x32" href="assets/images/favicon-32x32.png" />
+
+  <!-- Apple -->
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+
+  <!-- Android -->
+  <link rel="icon" type="image/webp" sizes="192x192" href="assets/images/android-chrome-192x192.png" />
+  <link rel="icon" type="image/webp" sizes="512x512" href="assets/images/android-chrome-512x512.png" />
+
+  <!-- Manifest -->
+  <link rel="manifest" href="assets/images/site.webmanifest" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!--- Bootstrap Icon --->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <link rel="stylesheet" href="assets/css/loader.css" />
+  <link rel="stylesheet" href="assets/css/navbar.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+  <!--- Loader Start --->
+  <div class="bp-ldr-loader" id="bp-ldr-loader" role="status" aria-live="polite" aria-label="Loading Stackly">
+    <div class="bp-ldr-background" aria-hidden="true">
+      <span class="bp-ldr-orb bp-ldr-orb-one"></span>
+      <span class="bp-ldr-orb bp-ldr-orb-two"></span>
+      <div class="bp-ldr-grid"></div>
+      <div class="bp-ldr-particles" id="bp-ldr-particles"></div>
+    </div>
+    <div class="bp-ldr-content">
+      <a href="index.html" class="bp-ldr-brand" aria-label="Stackly home">
+        <img src="assets/images/brand-logo.webp" alt="Stackly" class="bp-ldr-logo">
+      </a>
+      <div class="bp-ldr-animation" aria-hidden="true">
+        <div class="bp-ldr-ring bp-ldr-ring-outer"></div>
+        <div class="bp-ldr-ring bp-ldr-ring-middle"></div>
+        <div class="bp-ldr-ring bp-ldr-ring-inner"></div>
+        <div class="bp-ldr-icon-wrap">
+          <i class="bi bi-box-seam bp-ldr-main-icon"></i>
+        </div>
+        <span class="bp-ldr-orbit-dot bp-ldr-dot-one"></span>
+        <span class="bp-ldr-orbit-dot bp-ldr-dot-two"></span>
+        <span class="bp-ldr-orbit-dot bp-ldr-dot-three"></span>
+      </div>
+      <div class="bp-ldr-copy">
+        <span class="bp-ldr-eyebrow"><span class="bp-ldr-status-dot"></span> SMARTER PROCUREMENT</span>
+        <h2 class="bp-ldr-title">Business in motion<span>.</span></h2>
+        <p class="bp-ldr-message" id="bp-ldr-message">Connecting your business...</p>
+      </div>
+      <div class="bp-ldr-bottom">
+        <span>BUY SMARTER</span>
+        <span class="bp-ldr-bottom-line"></span>
+        <span>BUILD STRONGER</span>
+      </div>
+    </div>
+  </div>
+  <!--- Loader End --->
+
+  <!--- Navbar Component --->
+  <div id="bp-com-navbar-container"></div>
+
+  <!--- Sub Hero Section Start --->
+  <section class="bp-com-hero" id="bp-com-hero" data-bp-hero>
+    <div class="bp-com-hero-bg" aria-hidden="true">
+      <span class="bp-com-hero-glow bp-com-hero-glow-one"></span>
+      <span class="bp-com-hero-glow bp-com-hero-glow-two"></span>
+      <div class="bp-com-hero-grid"></div>
+      <span class="bp-com-hero-orb bp-com-hero-orb-one"></span>
+      <span class="bp-com-hero-orb bp-com-hero-orb-two"></span>
+    </div>
+    <div class="container">
+      <div class="bp-com-hero-layout">
+        <div class="bp-com-hero-content">
+          <nav class="bp-com-hero-breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html"><i class="bi bi-house-door"></i> Home</a>
+            <i class="bi bi-chevron-right bp-com-hero-breadcrumb-separator" aria-hidden="true"></i>
+            <span aria-current="page">Solution</span>
+          </nav>
+          <div class="bp-com-hero-eyebrow"><span class="bp-com-hero-eyebrow-dot"></span><span>GET TO KNOW
+              STACKLY</span><span class="bp-com-hero-eyebrow-line"></span></div>
+          <h1 class="bp-com-hero-title">Building a smarter future for <span>business procurement.</span></h1>
+          <p class="bp-com-hero-description">Discover a more connected way to manage purchasing, explore
+            supplier opportunities, and bring business workflows together on one platform.</p>
+          <div class="bp-com-hero-actions">
+            <a href="404.html" class="bp-com-hero-primary-btn">Explore our solutions <i
+                class="bi bi-arrow-up-right"></i></a>
+            <a href="404.html" class="bp-com-hero-secondary-btn"><span class="bp-com-hero-play-icon"><i
+                  class="bi bi-chat-square-text"></i></span> Talk to our team</a>
+          </div>
+          <div class="bp-com-hero-highlights">
+            <div class="bp-com-hero-highlight"><span class="bp-com-hero-highlight-icon"><i
+                  class="bi bi-diagram-3"></i></span><span><strong>Connected</strong><small>Business
+                  workflows</small></span></div>
+            <span class="bp-com-hero-highlight-divider"></span>
+            <div class="bp-com-hero-highlight"><span
+                class="bp-com-hero-highlight-icon bp-com-hero-highlight-icon-teal"><i
+                  class="bi bi-box-seam"></i></span><span><strong>Organized</strong><small>Procurement
+                  journey</small></span></div>
+          </div>
+        </div>
+        <div class="bp-com-hero-visual" data-bp-hero-visual>
+          <div class="bp-com-hero-visual-orbit bp-com-hero-visual-orbit-one"></div>
+          <div class="bp-com-hero-visual-orbit bp-com-hero-visual-orbit-two"></div>
+          <div class="bp-com-hero-visual-orbit bp-com-hero-visual-orbit-three"></div>
+          <div class="bp-com-hero-dashboard">
+            <div class="bp-com-hero-dashboard-top">
+              <div class="bp-com-hero-dashboard-brand"><span class="bp-com-hero-dashboard-brand-icon"><i
+                    class="bi bi-box-seam"></i></span><span><strong>Stackly</strong><small>PROCUREMENT
+                    WORKSPACE</small></span></div>
+              <button type="button" class="bp-com-hero-dashboard-menu" aria-label="Show workspace overview"
+                data-bp-hero-demo><i class="bi bi-three-dots"></i></button>
+            </div>
+            <div class="bp-com-hero-dashboard-welcome"><span>YOUR WORKSPACE</span><strong>Everything,
+                connected.</strong><small>One clearer view of your procurement journey.</small></div>
+            <div class="bp-com-hero-dashboard-stats">
+              <div class="bp-com-hero-stat"><span class="bp-com-hero-stat-icon"><i
+                    class="bi bi-search"></i></span><span><small>SOURCING</small><strong>Discover</strong></span><i
+                  class="bi bi-arrow-up-right"></i></div>
+              <div class="bp-com-hero-stat"><span class="bp-com-hero-stat-icon bp-com-hero-stat-teal"><i
+                    class="bi bi-receipt"></i></span><span><small>ORDERS</small><strong>Organize</strong></span><i
+                  class="bi bi-arrow-up-right"></i></div>
+            </div>
+            <div class="bp-com-hero-dashboard-workflow">
+              <div class="bp-com-hero-workflow-heading"><strong>Procurement
+                  workflow</strong><span>OVERVIEW</span></div>
+              <div class="bp-com-hero-workflow-step"><span class="bp-com-hero-workflow-number">01</span><span
+                  class="bp-com-hero-workflow-copy"><strong>Discover suppliers</strong><small>Explore
+                    available options</small></span><i class="bi bi-check-circle-fill"></i></div>
+              <div class="bp-com-hero-workflow-step"><span
+                  class="bp-com-hero-workflow-number bp-com-hero-workflow-number-teal">02</span><span
+                  class="bp-com-hero-workflow-copy"><strong>Manage purchasing</strong><small>Keep
+                    requests organized</small></span><i class="bi bi-arrow-up-right"></i></div>
+              <div class="bp-com-hero-workflow-step"><span
+                  class="bp-com-hero-workflow-number bp-com-hero-workflow-number-amber">03</span><span
+                  class="bp-com-hero-workflow-copy"><strong>Connect your teams</strong><small>Move
+                    work forward together</small></span><i class="bi bi-arrow-up-right"></i></div>
+            </div>
+            <div class="bp-com-hero-dashboard-footer"><span
+                class="bp-com-hero-dashboard-status-dot"></span><span>Designed for connected
+                procurement</span><i class="bi bi-shield-check"></i></div>
+          </div>
+          <div class="bp-com-hero-float-card bp-com-hero-float-supplier"><span class="bp-com-hero-float-icon"><i
+                class="bi bi-buildings"></i></span><span><strong>Supplier
+                network</strong><small>Discover new connections</small></span><i class="bi bi-check-circle-fill"></i>
+          </div>
+          <div class="bp-com-hero-float-card bp-com-hero-float-orders"><span
+              class="bp-com-hero-float-icon bp-com-hero-float-icon-teal"><i
+                class="bi bi-clipboard-check"></i></span><span><strong>Orders in one
+                place</strong><small>Stay organized</small></span></div>
+          <div class="bp-com-hero-visual-caption"><span class="bp-com-hero-caption-icon"><i
+                class="bi bi-stars"></i></span><span><strong>Procurement,
+                reimagined.</strong><small>Less fragmentation. More connection.</small></span></div>
+          <span class="bp-com-hero-visual-dot bp-com-hero-visual-dot-one"></span>
+          <span class="bp-com-hero-visual-dot bp-com-hero-visual-dot-two"></span>
+        </div>
+      </div>
+      <div class="bp-com-hero-bottom">
+        <span class="bp-com-hero-bottom-label">A BETTER WAY TO WORK</span>
+        <span class="bp-com-hero-bottom-line"></span>
+        <div class="bp-com-hero-bottom-item"><i class="bi bi-search"></i> Smarter sourcing</div>
+        <div class="bp-com-hero-bottom-item"><i class="bi bi-arrow-left-right"></i> Better collaboration</div>
+        <div class="bp-com-hero-bottom-item"><i class="bi bi-layers"></i> Connected workflows</div>
+      </div>
+    </div>
+  </section>
+  <!--- Sub Hero Section End --->
+
+  <!--- Contact Information Section Start --->
+  <section class="bp-con-info-section" id="contact-information">
+    <div class="container">
+
+      <!--- Section Heading --->
+      <div class="bp-con-info-heading">
+        <span class="bp-con-info-eyebrow">
+          <span></span> WE'RE HERE TO HELP
+        </span>
+        <h2>Let's connect with <span>Stackly.</span></h2>
+        <p>
+          Have a question, need assistance or looking to work with us?
+          Reach out through any of the contact options below.
+        </p>
+      </div>
+
+      <!--- Contact Information Cards --->
+      <div class="bp-con-info-grid">
+
+        <!--- Email Card --->
+        <article class="bp-con-info-card bp-con-info-email">
+          <div class="bp-con-info-card-top">
+            <div class="bp-con-info-icon">
+              <i class="bi bi-envelope-at"></i>
+            </div>
+            <span class="bp-con-info-card-number">01</span>
+          </div>
+
+          <div class="bp-con-info-card-content">
+            <span class="bp-con-info-label">EMAIL US</span>
+            <h3>Let's talk over email.</h3>
+            <p>
+              Send us your questions and inquiries.
+              Our team is ready to hear from you.
+            </p>
+          </div>
+
+          <div class="bp-con-info-card-action">
+            <a href="mailto:info@stackly.com">
+              <span>info@stackly.com</span>
+              <i class="bi bi-arrow-up-right"></i>
+            </a>
+          </div>
+
+          <div class="bp-con-info-card-decoration">
+            <i class="bi bi-envelope"></i>
+          </div>
+        </article>
+
+        <!--- Phone Card --->
+        <article class="bp-con-info-card bp-con-info-phone">
+          <div class="bp-con-info-card-top">
+            <div class="bp-con-info-icon">
+              <i class="bi bi-telephone"></i>
+            </div>
+            <span class="bp-con-info-card-number">02</span>
+          </div>
+
+          <div class="bp-con-info-card-content">
+            <span class="bp-con-info-label">CALL OUR TEAM</span>
+            <h3>Let's have a conversation.</h3>
+            <p>
+              Speak with our team for assistance,
+              business inquiries and general support.
+            </p>
+          </div>
+
+          <div class="bp-con-info-card-action">
+            <a href="tel:+919876543210">
+              <span>+91 9876543210</span>
+              <i class="bi bi-arrow-up-right"></i>
+            </a>
+          </div>
+
+          <div class="bp-con-info-card-decoration">
+            <i class="bi bi-telephone"></i>
+          </div>
+        </article>
+
+        <!--- Location Card --->
+        <article class="bp-con-info-card bp-con-info-location">
+          <div class="bp-con-info-card-top">
+            <div class="bp-con-info-icon">
+              <i class="bi bi-geo-alt"></i>
+            </div>
+            <span class="bp-con-info-card-number">03</span>
+          </div>
+
+          <div class="bp-con-info-card-content">
+            <span class="bp-con-info-label">OUR LOCATION</span>
+            <h3>Find us in Salem.</h3>
+            <p>
+              Visit our location or get directions
+              to connect with our team.
+            </p>
+          </div>
+
+          <div class="bp-con-info-address">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>
+              MMR Complex, ChinnaThirupathi,
+              Salem, Tamil Nadu, India
+            </span>
+          </div>
+
+          <div class="bp-con-info-card-action">
+            <a href="https://www.google.com/maps/dir/?api=1&destination=MMR+Complex+Chinna+Thirupathi+Salem+Tamil+Nadu+636008"
+              target="_blank" rel="noopener noreferrer">
+              <span>Get Directions</span>
+              <i class="bi bi-arrow-up-right"></i>
+            </a>
+          </div>
+
+          <div class="bp-con-info-card-decoration">
+            <i class="bi bi-pin-map"></i>
+          </div>
+        </article>
+
+      </div>
+
+      <!--- Contact Information Bottom Note --->
+      <div class="bp-con-info-note">
+        <div class="bp-con-info-note-icon">
+          <i class="bi bi-chat-square-text"></i>
+        </div>
+        <div>
+          <strong>Not sure who to contact?</strong>
+          <span>Send us a message and we'll help direct your inquiry to the right team.</span>
+        </div>
+        <a href="404.html">
+          Send an inquiry
+          <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+  <!--- Contact Information Section End --->
+
+  <!--- Get in Touch / Contact Form Section Start --->
+  <section class="bp-con-form-section" id="contact-form">
+    <div class="container">
+      <div class="bp-con-form-wrapper">
+
+        <!--- Contact Form Introduction --->
+        <div class="bp-con-form-info">
+          <span class="bp-con-form-eyebrow">
+            <span></span> GET IN TOUCH
+          </span>
+
+          <h2>Let's start a conversation that <span>moves business forward.</span></h2>
+
+          <p class="bp-con-form-description">
+            Tell us what you're looking for. Whether you're a buyer,
+            supplier or business partner, our team is ready to help
+            you find the right way forward.
+          </p>
+
+          <!--- Contact Highlights --->
+          <div class="bp-con-form-highlights">
+            <div class="bp-con-form-highlight">
+              <div class="bp-con-form-highlight-icon">
+                <i class="bi bi-chat-square-text"></i>
+              </div>
+              <div>
+                <strong>Tell us about your needs</strong>
+                <span>Share your questions and business requirements.</span>
+              </div>
+            </div>
+
+            <div class="bp-con-form-highlight">
+              <div class="bp-con-form-highlight-icon">
+                <i class="bi bi-people"></i>
+              </div>
+              <div>
+                <strong>Connect with our team</strong>
+                <span>We'll help direct your inquiry to the right team.</span>
+              </div>
+            </div>
+
+            <div class="bp-con-form-highlight">
+              <div class="bp-con-form-highlight-icon">
+                <i class="bi bi-lightning-charge"></i>
+              </div>
+              <div>
+                <strong>Move forward with confidence</strong>
+                <span>Get the information you need to take your next step.</span>
+              </div>
+            </div>
+          </div>
+
+          <!--- Contact Form Side Note --->
+          <div class="bp-con-form-side-note">
+            <div class="bp-con-form-side-note-icon">
+              <i class="bi bi-shield-check"></i>
+            </div>
+            <div>
+              <strong>Your information matters.</strong>
+              <span>We'll use your details to respond to your inquiry.</span>
+            </div>
+          </div>
+
+          <!--- Decorative Elements --->
+          <div class="bp-con-form-decoration bp-con-form-decoration-one"></div>
+          <div class="bp-con-form-decoration bp-con-form-decoration-two"></div>
+        </div>
+
+        <!--- Contact Form Card --->
+        <div class="bp-con-form-card">
+          <div class="bp-con-form-card-heading">
+            <span>CONTACT OUR TEAM</span>
+            <h3>Send us a message</h3>
+            <p>Fill in the details below and we'll be happy to assist.</p>
+          </div>
+
+          <form id="bp-con-inquiry-form" class="bp-con-inquiry-form" action="#" method="post">
+
+            <!--- Name Field --->
+            <div class="bp-con-form-field">
+              <label for="bp-con-name">Full Name <span>*</span></label>
+              <div class="bp-con-form-input-wrap">
+                <i class="bi bi-person"></i>
+                <input type="text" id="bp-con-name" name="name" placeholder="Enter your full name" autocomplete="name"
+                  pattern="[A-Za-z]+(?:[ '-][A-Za-z]+)*" title="Please enter a name using letters only." required>
+              </div>
+            </div>
+
+            <!--- Email Field --->
+            <div class="bp-con-form-field">
+              <label for="bp-con-email">Email Address <span>*</span></label>
+              <div class="bp-con-form-input-wrap">
+                <i class="bi bi-envelope"></i>
+                <input type="email" id="bp-con-email" name="email" placeholder="you@example.com" autocomplete="email"
+                  required>
+              </div>
+            </div>
+
+            <!--- Phone Field --->
+            <div class="bp-con-form-field">
+              <label for="bp-con-phone">Phone Number <span>*</span></label>
+              <div class="bp-con-form-input-wrap">
+                <i class="bi bi-telephone"></i>
+                <span class="bp-con-form-country-code">+91</span>
+                <input type="tel" id="bp-con-phone" name="phone" placeholder="Enter 10-digit number" inputmode="numeric"
+                  autocomplete="tel-national" pattern="[0-9]{10}" minlength="10" maxlength="10"
+                  title="Please enter exactly 10 digits." required>
+              </div>
+            </div>
+
+            <!--- Inquiry Type Field --->
+            <div class="bp-con-form-field">
+              <label for="bp-con-inquiry">Inquiry Type <span>*</span></label>
+              <div class="bp-con-form-input-wrap bp-con-form-select-wrap">
+                <i class="bi bi-grid"></i>
+                <select id="bp-con-inquiry" name="inquiry_type" required>
+                  <option value="" disabled selected>Select inquiry type</option>
+                  <option value="Buyer Inquiry">Buyer Inquiry</option>
+                  <option value="Supplier Inquiry">Supplier Inquiry</option>
+                  <option value="Business Partnership">Business Partnership</option>
+                  <option value="Platform Support">Platform Support</option>
+                  <option value="General Inquiry">General Inquiry</option>
+                </select>
+                <i class="bi bi-chevron-down bp-con-form-select-arrow"></i>
+              </div>
+            </div>
+
+            <!--- Subject Field --->
+            <div class="bp-con-form-field">
+              <label for="bp-con-subject">Subject <span>*</span></label>
+              <div class="bp-con-form-input-wrap">
+                <i class="bi bi-pencil-square"></i>
+                <input type="text" id="bp-con-subject" name="subject" placeholder="Enter your subject" required>
+              </div>
+            </div>
+
+            <!--- Message Field --->
+            <div class="bp-con-form-field bp-con-form-message-field">
+              <label for="bp-con-message">Your Message <span>*</span></label>
+              <div class="bp-con-form-input-wrap bp-con-form-textarea-wrap">
+                <i class="bi bi-chat-left-text"></i>
+                <textarea id="bp-con-message" name="message" placeholder="Tell us how we can help you..." rows="5"
+                  required></textarea>
+              </div>
+            </div>
+
+            <!--- Submit Button --->
+            <button type="submit" class="bp-con-form-submit">
+              <span>Send Message</span>
+              <i class="bi bi-arrow-up-right"></i>
+            </button>
+
+            <p class="bp-con-form-disclaimer">
+              <i class="bi bi-lock"></i>
+              Your information is submitted securely.
+            </p>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--- Contact Success Popup --->
+  <div class="bp-con-success-overlay" id="bp-con-success-popup" aria-hidden="true">
+    <div class="bp-con-success-popup" role="dialog" aria-modal="true" aria-labelledby="bp-con-success-title">
+      <button type="button" class="bp-con-success-close" id="bp-con-success-close" aria-label="Close popup">
+        <i class="bi bi-x-lg"></i>
+      </button>
+
+      <div class="bp-con-success-icon">
+        <i class="bi bi-check-lg"></i>
+      </div>
+
+      <span class="bp-con-success-label">MESSAGE SUBMITTED</span>
+      <h3 id="bp-con-success-title">Thank You!</h3>
+      <p>Your message has been sent successfully! Our team appreciates you reaching out to Stackly.</p>
+
+      <button type="button" class="bp-con-success-button" id="bp-con-success-ok">
+        Got it
+        <i class="bi bi-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+  <!--- Contact Success Popup End --->
+
+  <!--- Get in Touch / Contact Form Section End --->
+
+  <!--- Our Office / Location Section Start --->
+<section class="bp-con-location-section" id="office-location">
+    <div class="container">
+        <!--- Section Heading --->
+        <div class="bp-con-location-heading">
+            <div class="bp-con-location-heading-content">
+                <span class="bp-con-location-eyebrow">
+                    <i class="bi bi-geo-alt"></i>
+                    OUR LOCATION
+                </span>
+                <h2>Visit Our <span>Office</span></h2>
+                <p>
+                    We'd love to connect with you. Find our office location
+                    and get in touch with the Stackly team.
+                </p>
+            </div>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=MMR+Complex+Chinna+Thirupathi+Salem+Tamil+Nadu+636008"
+               target="_blank" rel="noopener noreferrer"
+               class="bp-con-location-directions">
+                <i class="bi bi-signpost-2"></i>
+                Get Directions
+                <i class="bi bi-arrow-up-right"></i>
+            </a>
+        </div>
+
+        <!--- Location Main Content --->
+        <div class="bp-con-location-layout">
+            <!--- Map --->
+            <div class="bp-con-location-map-wrap">
+                <div class="bp-con-location-map">
+                    <iframe
+                        src="https://maps.google.com/maps?q=MMR%20Complex%2C%20Chinna%20Thirupathi%2C%20Salem%2C%20Tamil%20Nadu%20636008&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        title="Stackly office location map"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="bp-con-location-map-label">
+                    <span class="bp-con-location-map-icon">
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </span>
+                    <div>
+                        <strong>Stackly Office</strong>
+                        <span>Chinna Thirupathi, Salem</span>
+                    </div>
+                    <span class="bp-con-location-map-status">
+                        <span></span>
+                        Our Location
+                    </span>
+                </div>
+            </div>
+
+            <!--- Office Information --->
+            <div class="bp-con-location-details">
+                <div class="bp-con-location-info-card">
+                    <div class="bp-con-location-card-icon">
+                        <i class="bi bi-building"></i>
+                    </div>
+                    <div class="bp-con-location-card-content">
+                        <span class="bp-con-location-card-label">OFFICE ADDRESS</span>
+                        <h3>Stackly Business Office</h3>
+                        <p>
+                            MMR Complex, Chinna Thirupathi,
+                            Salem, Tamil Nadu, India - 636008
+                        </p>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=MMR+Complex+Chinna+Thirupathi+Salem+Tamil+Nadu+636008"
+                           target="_blank" rel="noopener noreferrer">
+                            View on Google Maps
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bp-con-location-info-card">
+                    <div class="bp-con-location-card-icon bp-con-location-phone-icon">
+                        <i class="bi bi-telephone"></i>
+                    </div>
+                    <div class="bp-con-location-card-content">
+                        <span class="bp-con-location-card-label">CONTACT OUR TEAM</span>
+                        <h3>Let's Talk Business</h3>
+                        <p>Have a question or want to discuss a partnership?</p>
+                        <a href="tel:+919876543210">
+                            +91 98765 43210
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bp-con-location-info-card bp-con-location-hours-card">
+                    <div class="bp-con-location-card-icon bp-con-location-hours-icon">
+                        <i class="bi bi-clock"></i>
+                    </div>
+                    <div class="bp-con-location-card-content">
+                        <span class="bp-con-location-card-label">OFFICE HOURS</span>
+                        <h3>When We're Available</h3>
+                        <div class="bp-con-location-hours-list">
+                            <div>
+                                <span>Monday – Friday</span>
+                                <strong>9:00 AM – 6:00 PM</strong>
+                            </div>
+                            <div>
+                                <span>Saturday</span>
+                                <strong>9:00 AM – 1:00 PM</strong>
+                            </div>
+                            <div>
+                                <span>Sunday</span>
+                                <strong>Closed</strong>
+                            </div>
+                        </div>
+                        <span class="bp-con-location-time-note">
+                            <i class="bi bi-info-circle"></i>
+                            All times are in IST.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--- Location Bottom Note --->
+        <div class="bp-con-location-bottom">
+            <div class="bp-con-location-bottom-icon">
+                <i class="bi bi-chat-square-heart"></i>
+            </div>
+            <div>
+                <h4>Planning to visit us?</h4>
+                <p>Contact our team before visiting so we can make time for you.</p>
+            </div>
+            <a href="404.html">
+                Contact Us
+                <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
+  <!--- Our Office / Location Section End --->
+
+  <!--- FAQ Section Start --->
+  
+<!--- Contact FAQ Section --->
+<section class="bp-con-faq-section" id="contact-faq">
+    <div class="container">
+        <!--- FAQ Heading --->
+        <div class="bp-con-faq-heading">
+            <span class="bp-con-faq-eyebrow">
+                <i class="bi bi-patch-question"></i>
+                GOT QUESTIONS?
+            </span>
+            <h2>Frequently Asked <span>Questions</span></h2>
+            <p>
+                Find answers to common questions about Stackly, our procurement
+                solutions, supplier network, and how to get started.
+            </p>
+        </div>
+
+        <!--- FAQ Layout --->
+        <div class="bp-con-faq-layout">
+            <!--- FAQ Left Content --->
+            <div class="bp-con-faq-intro">
+                <div class="bp-con-faq-intro-visual">
+                    <div class="bp-con-faq-visual-orbit bp-con-faq-orbit-one"></div>
+                    <div class="bp-con-faq-visual-orbit bp-con-faq-orbit-two"></div>
+                    <div class="bp-con-faq-visual-icon">
+                        <i class="bi bi-chat-square-text"></i>
+                    </div>
+                    <span class="bp-con-faq-floating-icon bp-con-faq-float-one">
+                        <i class="bi bi-question-circle"></i>
+                    </span>
+                    <span class="bp-con-faq-floating-icon bp-con-faq-float-two">
+                        <i class="bi bi-lightbulb"></i>
+                    </span>
+                    <span class="bp-con-faq-floating-icon bp-con-faq-float-three">
+                        <i class="bi bi-headset"></i>
+                    </span>
+                </div>
+
+                <span class="bp-con-faq-intro-label">NEED A LITTLE HELP?</span>
+                <h3>We're here to make things <span>clear.</span></h3>
+                <p>
+                    Can't find the answer you're looking for?
+                    Our team is ready to help you understand the platform
+                    and find the right solution for your business.
+                </p>
+
+                <a href="404.html" class="bp-con-faq-contact-link">
+                    Talk to our team
+                    <i class="bi bi-arrow-up-right"></i>
+                </a>
+
+                <div class="bp-con-faq-support-note">
+                    <span class="bp-con-faq-support-icon">
+                        <i class="bi bi-envelope-check"></i>
+                    </span>
+                    <div>
+                        <strong>Still have questions?</strong>
+                        <span>Send us your inquiry and we'll help you out.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--- FAQ Accordion --->
+            <div class="bp-con-faq-list" data-bp-faq>
+                <!--- FAQ Item 1 --->
+                <div class="bp-con-faq-item bp-con-faq-active">
+                    <button class="bp-con-faq-question" type="button" aria-expanded="true">
+                        <span class="bp-con-faq-number">01</span>
+                        <span class="bp-con-faq-question-text">What is Stackly and how does it work?</span>
+                        <span class="bp-con-faq-toggle">
+                            <i class="bi bi-plus-lg"></i>
+                        </span>
+                    </button>
+                    <div class="bp-con-faq-answer">
+                        <div class="bp-con-faq-answer-inner">
+                            <p>
+                                Stackly is a B2B procurement platform designed to help
+                                businesses discover suppliers, manage purchasing activities,
+                                organize product catalogs, and improve buyer-supplier
+                                collaboration through a centralized digital workspace.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- FAQ Item 2 --->
+                <div class="bp-con-faq-item">
+                    <button class="bp-con-faq-question" type="button" aria-expanded="false">
+                        <span class="bp-con-faq-number">02</span>
+                        <span class="bp-con-faq-question-text">How can my business get started with Stackly?</span>
+                        <span class="bp-con-faq-toggle">
+                            <i class="bi bi-plus-lg"></i>
+                        </span>
+                    </button>
+                    <div class="bp-con-faq-answer">
+                        <div class="bp-con-faq-answer-inner">
+                            <p>
+                                You can get started by creating an account through our
+                                registration page. Once registered, you can explore the
+                                platform and connect with the features relevant to your
+                                procurement needs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- FAQ Item 3 --->
+                <div class="bp-con-faq-item">
+                    <button class="bp-con-faq-question" type="button" aria-expanded="false">
+                        <span class="bp-con-faq-number">03</span>
+                        <span class="bp-con-faq-question-text">Can suppliers register on Stackly?</span>
+                        <span class="bp-con-faq-toggle">
+                            <i class="bi bi-plus-lg"></i>
+                        </span>
+                    </button>
+                    <div class="bp-con-faq-answer">
+                        <div class="bp-con-faq-answer-inner">
+                            <p>
+                                Yes. Businesses interested in joining the supplier network
+                                can register through Stackly. Supplier profiles can help
+                                buyers discover relevant businesses and explore potential
+                                business opportunities.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- FAQ Item 4 --->
+                <div class="bp-con-faq-item">
+                    <button class="bp-con-faq-question" type="button" aria-expanded="false">
+                        <span class="bp-con-faq-number">04</span>
+                        <span class="bp-con-faq-question-text">Can I manage purchase orders through the platform?</span>
+                        <span class="bp-con-faq-toggle">
+                            <i class="bi bi-plus-lg"></i>
+                        </span>
+                    </button>
+                    <div class="bp-con-faq-answer">
+                        <div class="bp-con-faq-answer-inner">
+                            <p>
+                                Stackly is designed to help businesses organize purchase
+                                orders, monitor order progress, and keep purchasing
+                                information accessible in one place.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- FAQ Item 5 --->
+                <div class="bp-con-faq-item">
+                    <button class="bp-con-faq-question" type="button" aria-expanded="false">
+                        <span class="bp-con-faq-number">05</span>
+                        <span class="bp-con-faq-question-text">How does supplier discovery work?</span>
+                        <span class="bp-con-faq-toggle">
+                            <i class="bi bi-plus-lg"></i>
+                        </span>
+                    </button>
+                    <div class="bp-con-faq-answer">
+                        <div class="bp-con-faq-answer-inner">
+                            <p>
+                                The supplier discovery experience is designed to help
+                                buyers explore supplier profiles and identify businesses
+                                that may match their sourcing requirements.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- FAQ Item 6 --->
+                <div class="bp-con-faq-item">
+                    <button class="bp-con-faq-question" type="button" aria-expanded="false">
+                        <span class="bp-con-faq-number">06</span>
+                        <span class="bp-con-faq-question-text">Can I organize my products and catalogs?</span>
+                        <span class="bp-con-faq-toggle">
+                            <i class="bi bi-plus-lg"></i>
+                        </span>
+                    </button>
+                    <div class="bp-con-faq-answer">
+                        <div class="bp-con-faq-answer-inner">
+                            <p>
+                                Yes. Stackly includes product and catalog management
+                                capabilities intended to help businesses organize product
+                                information and make catalog details easier to access.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- FAQ Item 7 --->
+                <div class="bp-con-faq-item">
+                    <button class="bp-con-faq-question" type="button" aria-expanded="false">
+                        <span class="bp-con-faq-number">07</span>
+                        <span class="bp-con-faq-question-text">Who can I contact for technical support?</span>
+                        <span class="bp-con-faq-toggle">
+                            <i class="bi bi-plus-lg"></i>
+                        </span>
+                    </button>
+                    <div class="bp-con-faq-answer">
+                        <div class="bp-con-faq-answer-inner">
+                            <p>
+                                For technical assistance or platform-related questions,
+                                use our contact form and select Platform Support as your
+                                inquiry type. Our team can then review your request.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- FAQ Item 8 --->
+                <div class="bp-con-faq-item">
+                    <button class="bp-con-faq-question" type="button" aria-expanded="false">
+                        <span class="bp-con-faq-number">08</span>
+                        <span class="bp-con-faq-question-text">How can I discuss a business partnership?</span>
+                        <span class="bp-con-faq-toggle">
+                            <i class="bi bi-plus-lg"></i>
+                        </span>
+                    </button>
+                    <div class="bp-con-faq-answer">
+                        <div class="bp-con-faq-answer-inner">
+                            <p>
+                                We'd be happy to hear about your partnership ideas.
+                                Select Business Partnership in our contact form and
+                                share some details about your proposal.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--- FAQ Bottom CTA --->
+        <div class="bp-con-faq-bottom">
+            <div class="bp-con-faq-bottom-content">
+                <span class="bp-con-faq-bottom-icon">
+                    <i class="bi bi-chat-dots"></i>
+                </span>
+                <div>
+                    <h3>Didn't find what you were looking for?</h3>
+                    <p>Let's have a conversation about your requirements.</p>
+                </div>
+            </div>
+            <a href="404.html">
+                Ask a Question
+                <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
+  <!--- FAQ Section End --->
+
+  <!--- Footer Component --->
+  <div id="bp-com-footer-container"></div>
+
+  <!--- Js Files --->
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/loader.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/footer.js"></script>
+
+  <!-- Page JS -->
+  <script src="assets/js/contact.js"></script>
+  <script src="assets/js/all-hero.js"></script>
+</body>
+
+</html>

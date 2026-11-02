@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Stackly</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+
+<body class="bp-dash-body">
+
+    <!--- Dashboard Layout --->
+    <div class="bp-dash-layout">
+
+        <!--- Sidebar Overlay --->
+        <div class="bp-dash-overlay" id="bp-dash-overlay"></div>
+
+        <!--- Sidebar --->
+        <aside class="bp-dash-sidebar" id="bp-dash-sidebar">
+
+            <!--- Sidebar Logo --->
+            <div class="bp-dash-sidebar-brand">
+                <a href="index.html" class="bp-dash-brand-link">
+                    <img src="assets/images/brand-logo.webp" alt="">
+                </a>
+                <button type="button" class="bp-dash-sidebar-close" id="bp-dash-sidebar-close"
+                    aria-label="Close sidebar">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+
+            <!--- Mobile User Information --->
+            <div class="bp-dash-mobile-user">
+                <div class="bp-dash-mobile-avatar">
+                    <img src="assets/images/profile-2.webp" alt="">
+                </div>
+                <div class="bp-dash-mobile-user-info">
+                    <span class="bp-dash-user-label">Logged in as</span>
+                    <span class="bp-dash-mobile-email" id="bp-dashboard-sidebar-email">user@example.com</span>
+                </div>
+            </div>
+
+            <!--- Sidebar Navigation --->
+            <nav class="bp-dash-navigation">
+                <span class="bp-dash-nav-heading">WORKSPACE</span>
+
+                <a href="client-dashboard.html" class="bp-dash-nav-link">
+                    <i class="bi bi-grid-1x2"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="client-suppliers.html" class="bp-dash-nav-link bp-dash-nav-active">
+                    <i class="bi bi-buildings"></i>
+                    <span>Suppliers</span>
+                </a>
+
+                <a href="client-products.html" class="bp-dash-nav-link">
+                    <i class="bi bi-box-seam"></i>
+                    <span>Products</span>
+                </a>
+
+                <a href="client-purchase-orders.html" class="bp-dash-nav-link">
+                    <i class="bi bi-receipt"></i>
+                    <span>Purchase Orders</span>
+                </a>
+
+                <div class="bp-dash-nav-spacer"></div>
+
+                <!--- Logout --->
+                <button type="button" class="bp-dash-nav-link bp-dash-logout" id="bp-dashboard-logout">
+                    <i class="bi bi-box-arrow-right"></i>
+                    <span>Logout</span>
+                </button>
+            </nav>
+
+            <!--- Sidebar Footer --->
+            <div class="bp-dash-sidebar-footer">
+                <div class="bp-dash-sidebar-footer-icon">
+                    <i class="bi bi-shield-check"></i>
+                </div>
+                <div>
+                    <span class="bp-dash-sidebar-footer-title">Stackly Workspace</span>
+                    <span class="bp-dash-sidebar-footer-text">Procurement made simpler.</span>
+                </div>
+            </div>
+        </aside>
+
+        <!--- Main Area --->
+        <div class="bp-dash-main">
+
+            <!--- Topbar --->
+            <header class="bp-dash-topbar">
+
+                <!--- Topbar Left --->
+                <div class="bp-dash-topbar-left">
+                    <button type="button" class="bp-dash-menu-toggle" id="bp-dash-menu-toggle" aria-label="Open sidebar"
+                        aria-expanded="false">
+                        <i class="bi bi-three-dots"></i>
+                    </button>
+                    <div class="bp-dash-page-heading">
+                        <span class="bp-dash-page-eyebrow">WORKSPACE</span>
+                        <h1 id="bp-dash-page-title">Dashboard</h1>
+                    </div>
+                </div>
+
+                <!--- Topbar Right --->
+                <div class="bp-dash-topbar-right">
+                    <div class="bp-dash-topbar-email">
+                        <i class="bi bi-envelope"></i>
+                        <span id="bp-dashboard-user-email">user@example.com</span>
+                    </div>
+
+                    <div class="bp-dash-profile-wrap">
+                        <button type="button" class="bp-dash-profile-button" id="bp-dash-profile-button"
+                            aria-label="Open profile">
+                            <span class="bp-dash-profile-avatar">
+                                <img src="assets/images/profile-2.webp" alt="">
+                            </span>
+                            <i class="bi bi-chevron-down bp-dash-profile-chevron"></i>
+                        </button>
+                        <div class="bp-dash-profile-dropdown" id="bp-dash-profile-dropdown">
+                            <div class="bp-dash-profile-dropdown-info">
+                                <strong id="bp-dash-profile-name">My Account</strong>
+                                <span id="bp-dash-profile-dropdown-email">user@example.com</span>
+                            </div>
+                            <a href="404.html"><i class="bi bi-person"></i> My Profile</a>
+                            <button type="button" id="bp-dashboard-profile-logout">
+                                <i class="bi bi-box-arrow-right"></i> Logout
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!--- Dashboard Content --->
+            <main class="bp-dash-content">
+
+                <!--- Client Suppliers --->
+                <section class="bp-client-suppliers">
+
+                    <!--- Page Introduction --->
+                    <div class="bp-suppliers-heading">
+                        <div>
+                            <span class="bp-suppliers-eyebrow">SUPPLIER DIRECTORY</span>
+                            <h2>Discover Trusted Suppliers</h2>
+                            <p>Explore suppliers, compare their capabilities and find the right business partners for
+                                your procurement needs.</p>
+                        </div>
+                        <a href="404.html" class="bp-suppliers-primary-btn">
+                            <i class="bi bi-person-plus"></i>
+                            Become a Supplier
+                        </a>
+                    </div>
+
+                    <!--- Supplier Overview Stats --->
+                    <div class="bp-suppliers-stats">
+
+                        <div class="bp-suppliers-stat-card">
+                            <div class="bp-suppliers-stat-icon bp-supplier-icon-blue">
+                                <i class="bi bi-buildings"></i>
+                            </div>
+                            <div>
+                                <span>Total Suppliers</span>
+                                <h3 id="bp-supplier-total">128</h3>
+                            </div>
+                        </div>
+
+                        <div class="bp-suppliers-stat-card">
+                            <div class="bp-suppliers-stat-icon bp-supplier-icon-green">
+                                <i class="bi bi-patch-check"></i>
+                            </div>
+                            <div>
+                                <span>Verified Suppliers</span>
+                                <h3 id="bp-supplier-verified">96</h3>
+                            </div>
+                        </div>
+
+                        <div class="bp-suppliers-stat-card">
+                            <div class="bp-suppliers-stat-icon bp-supplier-icon-purple">
+                                <i class="bi bi-tags"></i>
+                            </div>
+                            <div>
+                                <span>Categories</span>
+                                <h3 id="bp-supplier-categories">12</h3>
+                            </div>
+                        </div>
+
+                        <div class="bp-suppliers-stat-card">
+                            <div class="bp-suppliers-stat-icon bp-supplier-icon-orange">
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <div>
+                                <span>Top Rated</span>
+                                <h3 id="bp-supplier-top-rated">34</h3>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--- Supplier Directory Panel --->
+                    <div class="bp-suppliers-directory">
+
+                        <!--- Directory Header --->
+                        <div class="bp-suppliers-directory-header">
+                            <div>
+                                <span class="bp-suppliers-section-label">OUR NETWORK</span>
+                                <h3>Available Suppliers</h3>
+                                <p>Find the right supplier for your business requirements.</p>
+                            </div>
+                            <span class="bp-suppliers-results-count" id="bp-supplier-results-count">6 suppliers
+                                found</span>
+                        </div>
+
+                        <!--- Supplier Filters --->
+                        <div class="bp-suppliers-filters">
+
+                            <div class="bp-suppliers-search">
+                                <i class="bi bi-search"></i>
+                                <input type="search" id="bp-supplier-search"
+                                    placeholder="Search suppliers, categories..." aria-label="Search suppliers">
+                                <button type="button" id="bp-supplier-clear" aria-label="Clear search">
+                                    <i class="bi bi-x-lg"></i>
+                                </button>
+                            </div>
+
+                            <div class="bp-suppliers-filter-select">
+                                <i class="bi bi-grid"></i>
+                                <select id="bp-supplier-category" aria-label="Filter by category">
+                                    <option value="">All Categories</option>
+                                    <option value="Electronics">Electronics</option>
+                                    <option value="Office Supplies">Office Supplies</option>
+                                    <option value="Industrial Equipment">Industrial Equipment</option>
+                                    <option value="Packaging">Packaging</option>
+                                    <option value="Raw Materials">Raw Materials</option>
+                                    <option value="Safety Equipment">Safety Equipment</option>
+                                </select>
+                            </div>
+
+                            <div class="bp-suppliers-filter-select">
+                                <i class="bi bi-shield-check"></i>
+                                <select id="bp-supplier-status" aria-label="Filter by verification">
+                                    <option value="">All Suppliers</option>
+                                    <option value="Verified">Verified Only</option>
+                                    <option value="Standard">Standard</option>
+                                </select>
+                            </div>
+
+                            <button type="button" class="bp-suppliers-reset-btn" id="bp-supplier-reset">
+                                <i class="bi bi-arrow-counterclockwise"></i>
+                                Reset
+                            </button>
+
+                        </div>
+
+                        <!--- Supplier Cards --->
+                        <div class="bp-suppliers-grid" id="bp-suppliers-grid">
+
+                            <!--- Supplier Card 1 --->
+                            <article class="bp-supplier-card" data-name="TechSource India" data-category="Electronics"
+                                data-status="Verified" data-rating="4.9">
+                                <div class="bp-supplier-card-top">
+                                    <div class="bp-supplier-logo bp-supplier-logo-blue">TS</div>
+                                    <span class="bp-supplier-verified">
+                                        <i class="bi bi-patch-check-fill"></i> Verified
+                                    </span>
+                                </div>
+                                <div class="bp-supplier-card-info">
+                                    <h4>TechSource India</h4>
+                                    <span class="bp-supplier-category">Electronics</span>
+                                    <p>Reliable electronics components, computer accessories and business technology
+                                        products.</p>
+                                </div>
+                                <div class="bp-supplier-card-meta">
+                                    <span><i class="bi bi-geo-alt"></i> Chennai, India</span>
+                                    <span class="bp-supplier-rating"><i class="bi bi-star-fill"></i> 4.9
+                                        <small>(124)</small></span>
+                                </div>
+                                <div class="bp-supplier-card-footer">
+                                    <span class="bp-supplier-products-count"><i class="bi bi-box-seam"></i> 86
+                                        Products</span>
+                                    <a href="404.html" class="bp-supplier-view-btn">View Details <i
+                                            class="bi bi-arrow-up-right"></i></a>
+                                </div>
+                            </article>
+
+                            <!--- Supplier Card 2 --->
+                            <article class="bp-supplier-card" data-name="Prime Office Solutions"
+                                data-category="Office Supplies" data-status="Verified" data-rating="4.8">
+                                <div class="bp-supplier-card-top">
+                                    <div class="bp-supplier-logo bp-supplier-logo-green">PO</div>
+                                    <span class="bp-supplier-verified">
+                                        <i class="bi bi-patch-check-fill"></i> Verified
+                                    </span>
+                                </div>
+                                <div class="bp-supplier-card-info">
+                                    <h4>Prime Office Solutions</h4>
+                                    <span class="bp-supplier-category">Office Supplies</span>
+                                    <p>Complete workplace solutions, stationery, office furniture and essential
+                                        supplies.</p>
+                                </div>
+                                <div class="bp-supplier-card-meta">
+                                    <span><i class="bi bi-geo-alt"></i> Bengaluru, India</span>
+                                    <span class="bp-supplier-rating"><i class="bi bi-star-fill"></i> 4.8
+                                        <small>(98)</small></span>
+                                </div>
+                                <div class="bp-supplier-card-footer">
+                                    <span class="bp-supplier-products-count"><i class="bi bi-box-seam"></i> 142
+                                        Products</span>
+                                    <a href="404.html" class="bp-supplier-view-btn">View Details <i
+                                            class="bi bi-arrow-up-right"></i></a>
+                                </div>
+                            </article>
+
+                            <!--- Supplier Card 3 --->
+                            <article class="bp-supplier-card" data-name="Global Industrial Trade"
+                                data-category="Industrial Equipment" data-status="Verified" data-rating="4.7">
+                                <div class="bp-supplier-card-top">
+                                    <div class="bp-supplier-logo bp-supplier-logo-purple">GI</div>
+                                    <span class="bp-supplier-verified">
+                                        <i class="bi bi-patch-check-fill"></i> Verified
+                                    </span>
+                                </div>
+                                <div class="bp-supplier-card-info">
+                                    <h4>Global Industrial Trade</h4>
+                                    <span class="bp-supplier-category">Industrial Equipment</span>
+                                    <p>Industrial machinery, tools and equipment for commercial operations and
+                                        manufacturing.</p>
+                                </div>
+                                <div class="bp-supplier-card-meta">
+                                    <span><i class="bi bi-geo-alt"></i> Coimbatore, India</span>
+                                    <span class="bp-supplier-rating"><i class="bi bi-star-fill"></i> 4.7
+                                        <small>(86)</small></span>
+                                </div>
+                                <div class="bp-supplier-card-footer">
+                                    <span class="bp-supplier-products-count"><i class="bi bi-box-seam"></i> 64
+                                        Products</span>
+                                    <a href="404.html" class="bp-supplier-view-btn">View Details <i
+                                            class="bi bi-arrow-up-right"></i></a>
+                                </div>
+                            </article>
+
+                            <!--- Supplier Card 4 --->
+                            <article class="bp-supplier-card" data-name="PackWell Industries" data-category="Packaging"
+                                data-status="Standard" data-rating="4.5">
+                                <div class="bp-supplier-card-top">
+                                    <div class="bp-supplier-logo bp-supplier-logo-orange">PW</div>
+                                    <span class="bp-supplier-standard">
+                                        <i class="bi bi-check-circle"></i> Standard
+                                    </span>
+                                </div>
+                                <div class="bp-supplier-card-info">
+                                    <h4>PackWell Industries</h4>
+                                    <span class="bp-supplier-category">Packaging</span>
+                                    <p>Packaging materials, cartons, protective wraps and customized business packaging.
+                                    </p>
+                                </div>
+                                <div class="bp-supplier-card-meta">
+                                    <span><i class="bi bi-geo-alt"></i> Hyderabad, India</span>
+                                    <span class="bp-supplier-rating"><i class="bi bi-star-fill"></i> 4.5
+                                        <small>(62)</small></span>
+                                </div>
+                                <div class="bp-supplier-card-footer">
+                                    <span class="bp-supplier-products-count"><i class="bi bi-box-seam"></i> 53
+                                        Products</span>
+                                    <a href="404.html" class="bp-supplier-view-btn">View Details <i
+                                            class="bi bi-arrow-up-right"></i></a>
+                                </div>
+                            </article>
+
+                            <!--- Supplier Card 5 --->
+                            <article class="bp-supplier-card" data-name="Southern Raw Materials"
+                                data-category="Raw Materials" data-status="Verified" data-rating="4.8">
+                                <div class="bp-supplier-card-top">
+                                    <div class="bp-supplier-logo bp-supplier-logo-teal">SR</div>
+                                    <span class="bp-supplier-verified">
+                                        <i class="bi bi-patch-check-fill"></i> Verified
+                                    </span>
+                                </div>
+                                <div class="bp-supplier-card-info">
+                                    <h4>Southern Raw Materials</h4>
+                                    <span class="bp-supplier-category">Raw Materials</span>
+                                    <p>Quality raw materials and industrial-grade supplies for production and
+                                        manufacturing.</p>
+                                </div>
+                                <div class="bp-supplier-card-meta">
+                                    <span><i class="bi bi-geo-alt"></i> Madurai, India</span>
+                                    <span class="bp-supplier-rating"><i class="bi bi-star-fill"></i> 4.8
+                                        <small>(73)</small></span>
+                                </div>
+                                <div class="bp-supplier-card-footer">
+                                    <span class="bp-supplier-products-count"><i class="bi bi-box-seam"></i> 91
+                                        Products</span>
+                                    <a href="404.html" class="bp-supplier-view-btn">View Details <i
+                                            class="bi bi-arrow-up-right"></i></a>
+                                </div>
+                            </article>
+
+                            <!--- Supplier Card 6 --->
+                            <article class="bp-supplier-card" data-name="SafeGuard Equipments"
+                                data-category="Safety Equipment" data-status="Standard" data-rating="4.6">
+                                <div class="bp-supplier-card-top">
+                                    <div class="bp-supplier-logo bp-supplier-logo-red">SG</div>
+                                    <span class="bp-supplier-standard">
+                                        <i class="bi bi-check-circle"></i> Standard
+                                    </span>
+                                </div>
+                                <div class="bp-supplier-card-info">
+                                    <h4>SafeGuard Equipments</h4>
+                                    <span class="bp-supplier-category">Safety Equipment</span>
+                                    <p>Workplace safety products, protective equipment and industrial safety essentials.
+                                    </p>
+                                </div>
+                                <div class="bp-supplier-card-meta">
+                                    <span><i class="bi bi-geo-alt"></i> Mumbai, India</span>
+                                    <span class="bp-supplier-rating"><i class="bi bi-star-fill"></i> 4.6
+                                        <small>(57)</small></span>
+                                </div>
+                                <div class="bp-supplier-card-footer">
+                                    <span class="bp-supplier-products-count"><i class="bi bi-box-seam"></i> 47
+                                        Products</span>
+                                    <a href="404.html" class="bp-supplier-view-btn">View Details <i
+                                            class="bi bi-arrow-up-right"></i></a>
+                                </div>
+                            </article>
+
+                        </div>
+
+                        <!--- No Results --->
+                        <div class="bp-suppliers-empty" id="bp-suppliers-empty" hidden>
+                            <div class="bp-suppliers-empty-icon">
+                                <i class="bi bi-search"></i>
+                            </div>
+                            <h4>No suppliers found</h4>
+                            <p>Try changing your search or filters to find available suppliers.</p>
+                            <button type="button" id="bp-supplier-empty-reset">Clear Filters</button>
+                        </div>
+
+                        <!--- Directory Footer --->
+                        <div class="bp-suppliers-directory-footer">
+                            <span>Showing <strong id="bp-supplier-showing">6</strong> of <strong>6</strong> sample
+                                suppliers</span>
+                            <a href="404.html">Explore Supplier Network <i class="bi bi-arrow-right"></i></a>
+                        </div>
+
+                    </div>
+
+                    <!--- Supplier Support Banner --->
+                    <div class="bp-suppliers-support">
+                        <div class="bp-suppliers-support-icon">
+                            <i class="bi bi-headset"></i>
+                        </div>
+                        <div class="bp-suppliers-support-content">
+                            <h3>Need help finding the right supplier?</h3>
+                            <p>Our team can help you identify suppliers that match your business requirements.</p>
+                        </div>
+                        <a href="404.html" class="bp-suppliers-support-btn">
+                            Contact Support <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+
+                </section>
+
+                <!--- Dashboard Copyright --->
+                <footer class="bp-dash-content-footer">
+                    <span>© <span id="bp-dash-footer-year"></span> Stackly. All rights reserved.</span>
+                    <span>Built for better business buying.</span>
+                </footer>
+
+            </main>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/client-suppliers.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+
+/*--- Navbar Sticky Fix ---*/
+#bp-com-navbar-container {position: sticky;top: 0;z-index: 1030;width: 100%;align-self: flex-start;}
+.bp-com-navbar {position: relative;top: auto;z-index: 1030;width: 100%;background: rgba(255,255,255,.94);border-bottom: 1px solid rgba(228,233,242,.8);backdrop-filter: blur(18px);-webkit-backdrop-filter: blur(18px);transition: box-shadow .3s ease,background .3s ease;}
+.bp-com-navbar.bp-com-navbar-scrolled {background: rgba(255,255,255,.98);box-shadow: 0 8px 32px rgba(23,36,59,.07);}
+
+.bp-com-navbar-container {display: flex;width: 100%;max-width: 1440px;min-height: 84px;align-items: center;justify-content: space-between;gap: 30px;margin: 0 auto;padding: 0 48px;}
+/*--- Navbar Logo ---*/
+.bp-com-navbar-brand {display: inline-flex;min-width: 150px;align-items: center;flex-shrink: 0;}
+.bp-com-navbar-logo {display: block;width: 155px;max-width: 100%;max-height: 54px;object-fit: contain;object-position: left center;transition: transform .3s ease;}
+.bp-com-navbar-brand:hover .bp-com-navbar-logo {transform: translateY(-1px);}
+/*--- Navbar Menu ---*/
+.bp-com-navbar-menu {display: flex;flex: 1;align-items: center;justify-content: space-between;gap: 25px;}
+.bp-com-navbar-links {display: flex;align-items: center;justify-content: center;gap: 5px;margin: 0 auto;padding: 0;list-style: none;}
+.bp-com-navbar-item {position: relative;margin: 0;padding: 0;}
+.bp-com-navbar-link {position: relative;display: inline-flex;min-height: 44px;align-items: center;justify-content: center;padding: 0 13px;color: #526078;font-size: 13px;font-weight: 600;white-space: nowrap;transition: color .25s ease;}
+.bp-com-navbar-link::before {position: absolute;right: 13px;bottom: 5px;left: 13px;height: 2px;border-radius: 5px;background: var(--bp-primary);content: "";transform: scaleX(0);transform-origin: center;transition: transform .28s cubic-bezier(.2,.8,.2,1);}
+.bp-com-navbar-link::after {position: absolute;top: 50%;right: 4px;width: 4px;height: 4px;border-radius: 50%;background: var(--bp-primary);content: "";opacity: 0;transform: translateY(-50%) scale(.5);transition: opacity .25s ease,transform .25s ease;}
+.bp-com-navbar-link:hover,.bp-com-navbar-link:focus-visible {color: var(--bp-primary);}
+.bp-com-navbar-link:hover::before,.bp-com-navbar-link:focus-visible::before {transform: scaleX(1);}
+.bp-com-navbar-link[aria-current="page"] {color: var(--bp-primary);}
+.bp-com-navbar-link[aria-current="page"]::before {transform: scaleX(1);}
+.bp-com-navbar-link[aria-current="page"]::after {opacity: 1;transform: translateY(-50%) scale(1);}
+/*--- Navbar Actions ---*/
+.bp-com-navbar-actions {display: flex;align-items: center;justify-content: flex-end;gap: 18px;flex-shrink: 0;}
+.bp-com-navbar-login {display: inline-flex;min-height: 44px;align-items: center;justify-content: center;gap: 8px;color: var(--bp-heading);font-size: 13px;font-weight: 600;white-space: nowrap;transition: color .25s ease;}
+.bp-com-navbar-login i {font-size: 17px;transition: transform .25s ease;}
+.bp-com-navbar-login:hover {color: var(--bp-primary);}
+.bp-com-navbar-login:hover i {transform: translateY(-2px);}
+.bp-com-navbar-action-divider {width: 1px;height: 25px;background: var(--bp-border);}
+.bp-com-navbar-cta {position: relative;display: inline-flex;min-height: 46px;align-items: center;justify-content: center;gap: 13px;overflow: hidden;padding: 0 17px;border: 1px solid var(--bp-primary);border-radius: 10px;color: #fff;background: var(--bp-primary);box-shadow: 0 5px 14px rgba(40,85,232,.13);font-size: 12px;font-weight: 600;white-space: nowrap;transition: background .25s ease,border-color .25s ease,box-shadow .25s ease,transform .25s ease;}
+.bp-com-navbar-cta::before {position: absolute;top: -50%;left: -70%;width: 45%;height: 200%;background: rgba(255,255,255,.15);content: "";transform: rotate(20deg);transition: left .5s ease;}
+.bp-com-navbar-cta span,.bp-com-navbar-cta i {position: relative;z-index: 1;}
+.bp-com-navbar-cta i {font-size: 16px;transition: transform .25s ease;}
+.bp-com-navbar-cta:hover {color: #fff;background: var(--bp-primary-dark);border-color: var(--bp-primary-dark);box-shadow: 0 8px 20px rgba(40,85,232,.22);transform: translateY(-2px);}
+.bp-com-navbar-cta:hover::before {left: 130%;}
+.bp-com-navbar-cta:hover i {transform: translate(2px,-2px);}
+/*--- Navbar Toggle ---*/
+.bp-com-navbar-toggle {display: none;width: 44px;height: 44px;align-items: center;justify-content: center;flex-direction: column;gap: 5px;padding: 0;border: 1px solid var(--bp-border);border-radius: 11px;background: #fff;transition: border-color .25s ease,background .25s ease;}
+.bp-com-navbar-toggle:hover {border-color: #C9D6FF;background: var(--bp-primary-light);}
+.bp-com-navbar-toggle-line {display: block;width: 19px;height: 2px;border-radius: 4px;background: var(--bp-heading);transition: transform .3s ease,opacity .2s ease,width .3s ease;}
+.bp-com-navbar-toggle[aria-expanded="true"] .bp-com-navbar-toggle-line:first-child {transform: translateY(7px) rotate(45deg);}
+.bp-com-navbar-toggle[aria-expanded="true"] .bp-com-navbar-toggle-line:nth-child(2) {width: 0;opacity: 0;}
+.bp-com-navbar-toggle[aria-expanded="true"] .bp-com-navbar-toggle-line:last-child {transform: translateY(-7px) rotate(-45deg);}
+/*--- Navbar Responsive 1050px ---*/
+@media (max-width:1050px) {
+  .bp-com-navbar-container {min-height: 78px;gap: 18px;padding: 0 26px;}
+  .bp-com-navbar-brand {min-width: 125px;}
+  .bp-com-navbar-logo {width: 140px;}
+  .bp-com-navbar-menu {gap: 12px;}
+  .bp-com-navbar-links {gap: 0;}
+  .bp-com-navbar-link {padding: 0 10px;font-size: 12px;}
+  .bp-com-navbar-link::before {right: 10px;left: 10px;}
+  .bp-com-navbar-actions {gap: 12px;}
+  .bp-com-navbar-cta {gap: 8px;padding: 0 13px;}
+}
+/*--- Navbar Responsive 991px ---*/
+@media (max-width:991px) {
+  .bp-com-navbar-container {min-height: 74px;padding: 0 24px;}
+  .bp-com-navbar-toggle {display: flex;flex-shrink: 0;}
+  .bp-com-navbar-menu {position: absolute;top: calc(100% + 1px);right: 0;left: 0;display: flex;max-height: calc(100dvh - 75px);align-items: stretch;flex-direction: column;justify-content: flex-start;gap: 0;overflow-x: hidden;overflow-y: auto;padding: 0 24px 22px;border-bottom: 1px solid var(--bp-border);background: #fff;box-shadow: 0 18px 30px rgba(23,36,59,.08);opacity: 0;visibility: hidden;transform: translateY(-8px);transition: opacity .25s ease,transform .25s ease,visibility .25s ease;}
+  .bp-com-navbar-menu.bp-com-navbar-menu-open {opacity: 1;visibility: visible;transform: translateY(0);}
+  .bp-com-navbar-links {width: 100%;align-items: stretch;flex-direction: column;gap: 3px;margin: 0;padding: 15px 0;}
+  .bp-com-navbar-item {width: 100%;}
+  .bp-com-navbar-link {display: flex;width: 100%;min-height: 48px;justify-content: flex-start;padding: 0 14px;border-radius: 8px;font-size: 14px;}
+  .bp-com-navbar-link::before {right: auto;bottom: 9px;left: 14px;width: 25px;}
+  .bp-com-navbar-link::after {top: 50%;right: 15px;}
+  .bp-com-navbar-link:hover {background: #F7F9FF;}
+  .bp-com-navbar-link[aria-current="page"] {background: var(--bp-primary-light);}
+  .bp-com-navbar-actions {width: 100%;justify-content: flex-start;gap: 15px;padding-top: 16px;border-top: 1px solid var(--bp-border);}
+  .bp-com-navbar-login {min-height: 46px;padding: 0 10px;}
+  .bp-com-navbar-action-divider {height: 28px;}
+  .bp-com-navbar-cta {min-height: 46px;padding: 0 20px;}
+}
+/*--- Navbar Responsive 767px ---*/
+@media (max-width:767px) {
+  .bp-com-navbar-container {min-height: 70px;padding: 0 20px;}
+  .bp-com-navbar-logo {width: 132px;max-height: 48px;}
+  .bp-com-navbar-menu {max-height: calc(100dvh - 71px);padding-right: 20px;padding-left: 20px;}
+}
+/*--- Navbar Responsive 575px ---*/
+@media (max-width:575px) {
+  .bp-com-navbar-container {min-height: 66px;gap: 12px;padding: 0 16px;}
+  .bp-com-navbar-brand {min-width: 0;}
+  .bp-com-navbar-logo {width: 120px;max-height: 44px;}
+  .bp-com-navbar-toggle {width: 41px;height: 41px;}
+  .bp-com-navbar-menu {max-height: calc(100dvh - 67px);padding: 0 16px 18px;}
+  .bp-com-navbar-links {padding-top: 12px;padding-bottom: 12px;}
+  .bp-com-navbar-link {min-height: 46px;}
+  .bp-com-navbar-actions {gap: 12px;}
+  .bp-com-navbar-login {font-size: 12px;}
+  .bp-com-navbar-cta {flex: 1;gap: 10px;padding: 0 12px;font-size: 12px;}
+}
+/*--- Navbar Reduced Motion ---*/
+@media (prefers-reduced-motion:reduce) {
+  .bp-com-navbar,.bp-com-navbar * {scroll-behavior: auto !important;animation: none !important;transition-duration: .01ms !important;}
+}

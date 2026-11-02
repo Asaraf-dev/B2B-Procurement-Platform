@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Create your Stackly account and connect with a smarter business procurement workspace.">
+    <title>Create Account | Stackly</title>
+
+    <!--- Bootstrap CSS --->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--- Bootstrap Icons --->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!--- Google Fonts --->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!--- Global CSS --->
+    <link rel="stylesheet" href="assets/css/global.css">
+
+    <!--- Authentication CSS --->
+    <link rel="stylesheet" href="assets/css/auth.css">
+</head>
+
+<body>
+
+    <!--- Register Page --->
+    <main class="bp-auth-register-page">
+        <div class="bp-auth-register-shell">
+
+            <!--- Left Visual Panel --->
+            <aside class="bp-auth-register-visual">
+                <div class="bp-auth-login-visual-bg">
+                    <span class="bp-auth-login-glow bp-auth-login-glow-one"></span>
+                    <span class="bp-auth-login-glow bp-auth-login-glow-two"></span>
+                    <div class="bp-auth-login-grid"></div>
+                </div>
+
+                <div class="bp-auth-register-visual-content">
+                    <a href="index.html" class="bp-auth-login-brand">
+                        <img src="assets/images/brand-logo.webp" alt="Stackly" class="bp-auth-login-logo">
+                    </a>
+
+                    <div class="bp-auth-register-visual-copy">
+                        <span class="bp-auth-login-visual-eyebrow">
+                            <span></span>
+                            START YOUR JOURNEY
+                        </span>
+                        <h1>Build stronger business connections <span>with Stackly.</span></h1>
+                        <p>
+                            Create your account and bring supplier discovery,
+                            purchasing activities, and business collaboration
+                            into one connected workspace.
+                        </p>
+                    </div>
+
+                    <!--- Registration Benefits --->
+                    <div class="bp-auth-register-benefits">
+                        <div class="bp-auth-register-benefit">
+                            <span><i class="bi bi-buildings"></i></span>
+                            <div>
+                                <strong>Connect with businesses</strong>
+                                <small>Discover opportunities and build relationships.</small>
+                            </div>
+                        </div>
+                        <div class="bp-auth-register-benefit">
+                            <span><i class="bi bi-cart-check"></i></span>
+                            <div>
+                                <strong>Organize procurement</strong>
+                                <small>Keep purchasing activities in one workspace.</small>
+                            </div>
+                        </div>
+                        <div class="bp-auth-register-benefit">
+                            <span><i class="bi bi-graph-up-arrow"></i></span>
+                            <div>
+                                <strong>Move business forward</strong>
+                                <small>Make business collaboration more organized.</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bp-auth-login-visual-footer">
+                    <span>BUY SMARTER</span>
+                    <span></span>
+                    <span>BUILD STRONGER</span>
+                </div>
+            </aside>
+
+            <!--- Right Register Panel --->
+            <section class="bp-auth-register-form-panel">
+                <div class="bp-auth-register-form-container">
+
+                    <!--- Back To Home --->
+                    <a href="index.html" class="bp-auth-login-back">
+                        <i class="bi bi-arrow-left"></i>
+                        Back to Home
+                    </a>
+
+                    <!--- Register Heading --->
+                    <div class="bp-auth-register-heading">
+                        <span class="bp-auth-login-eyebrow">CREATE YOUR ACCOUNT</span>
+                        <h2>Join <span>Stackly</span> today</h2>
+                        <p>Enter your details to create your business account.</p>
+                    </div>
+
+                    <!--- Register Form --->
+                    <form class="bp-auth-register-form" id="bp-auth-register-form" novalidate>
+
+                        <!--- Account Type --->
+                        <div class="bp-auth-register-field">
+                            <label class="bp-auth-login-label">Choose your account type <span>*</span></label>
+
+                            <div class="bp-auth-login-roles">
+                                <label class="bp-auth-login-role">
+                                    <input type="radio" name="registerAccountType" value="admin" required>
+                                    <span class="bp-auth-login-role-card">
+                                        <span class="bp-auth-login-role-icon">
+                                            <i class="bi bi-shield-lock"></i>
+                                        </span>
+                                        <span class="bp-auth-login-role-copy">
+                                            <strong>Admin</strong>
+                                            <small>Administrator access</small>
+                                        </span>
+                                        <span class="bp-auth-login-role-check">
+                                            <i class="bi bi-check-lg"></i>
+                                        </span>
+                                    </span>
+                                </label>
+
+                                <label class="bp-auth-login-role">
+                                    <input type="radio" name="registerAccountType" value="client" required>
+                                    <span class="bp-auth-login-role-card">
+                                        <span class="bp-auth-login-role-icon">
+                                            <i class="bi bi-person"></i>
+                                        </span>
+                                        <span class="bp-auth-login-role-copy">
+                                            <strong>Client</strong>
+                                            <small>Business account access</small>
+                                        </span>
+                                        <span class="bp-auth-login-role-check">
+                                            <i class="bi bi-check-lg"></i>
+                                        </span>
+                                    </span>
+                                </label>
+                            </div>
+                            <span class="bp-auth-login-error" id="bp-auth-register-role-error"></span>
+                        </div>
+
+                        <!--- Full Name --->
+                        <div class="bp-auth-register-field">
+                            <label for="bp-auth-register-name" class="bp-auth-login-label">Full name
+                                <span>*</span></label>
+                            <div class="bp-auth-login-input-wrap">
+                                <i class="bi bi-person"></i>
+                                <input type="text" id="bp-auth-register-name" name="fullName"
+                                    placeholder="Enter your full name" autocomplete="name" maxlength="60" required>
+                            </div>
+                            <span class="bp-auth-login-error" id="bp-auth-register-name-error"></span>
+                        </div>
+
+                        <!--- Phone Number --->
+                        <div class="bp-auth-register-field">
+                            <label for="bp-auth-register-phone" class="bp-auth-login-label">Phone number
+                                <span>*</span></label>
+                            <div class="bp-auth-login-input-wrap">
+                                <i class="bi bi-telephone"></i>
+                                <input type="tel" id="bp-auth-register-phone" name="phone"
+                                    placeholder="Enter 10-digit phone number" inputmode="numeric"
+                                    autocomplete="tel-national" maxlength="10" minlength="10" pattern="[0-9]{10}"
+                                    required>
+                            </div>
+                            <span class="bp-auth-login-error" id="bp-auth-register-phone-error"></span>
+                        </div>
+
+                        <!--- Email --->
+                        <div class="bp-auth-register-field">
+                            <label for="bp-auth-register-email" class="bp-auth-login-label">Email address
+                                <span>*</span></label>
+                            <div class="bp-auth-login-input-wrap">
+                                <i class="bi bi-envelope"></i>
+                                <input type="email" id="bp-auth-register-email" name="email"
+                                    placeholder="Enter your email address" autocomplete="email" required>
+                            </div>
+                            <span class="bp-auth-login-error" id="bp-auth-register-email-error"></span>
+                        </div>
+
+                        <!--- Password --->
+                        <div class="bp-auth-register-field">
+                            <label for="bp-auth-register-password" class="bp-auth-login-label">Password
+                                <span>*</span></label>
+                            <div class="bp-auth-login-input-wrap bp-auth-login-password-wrap">
+                                <i class="bi bi-lock"></i>
+                                <input type="password" id="bp-auth-register-password" name="password"
+                                    placeholder="Create a strong password" autocomplete="new-password" required>
+                                <button type="button" class="bp-auth-login-password-toggle"
+                                    id="bp-auth-register-password-toggle" aria-label="Show password"
+                                    aria-pressed="false">
+                                    <i class="bi bi-eye"></i>
+                                </button>
+                            </div>
+                            <span class="bp-auth-login-error" id="bp-auth-register-password-error"></span>
+                        </div>
+
+                        <!--- Confirm Password --->
+                        <div class="bp-auth-register-field">
+                            <label for="bp-auth-register-confirm-password" class="bp-auth-login-label">Confirm password
+                                <span>*</span></label>
+                            <div class="bp-auth-login-input-wrap bp-auth-login-password-wrap">
+                                <i class="bi bi-shield-lock"></i>
+                                <input type="password" id="bp-auth-register-confirm-password" name="confirmPassword"
+                                    placeholder="Re-enter your password" autocomplete="new-password" required>
+                                <button type="button" class="bp-auth-login-password-toggle"
+                                    id="bp-auth-register-confirm-toggle" aria-label="Show confirm password"
+                                    aria-pressed="false">
+                                    <i class="bi bi-eye"></i>
+                                </button>
+                            </div>
+                            <span class="bp-auth-login-error" id="bp-auth-register-confirm-error"></span>
+                        </div>
+
+                        <!--- General Error Message --->
+                        <div class="bp-auth-login-message" id="bp-auth-register-message" role="alert"
+                            aria-live="polite"></div>
+
+                        <!--- Create Account Button --->
+                        <button type="submit" class="bp-auth-login-submit bp-auth-register-submit"
+                            id="bp-auth-register-submit">
+                            <span>Create Account</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </form>
+
+                    <!--- Sign In Link --->
+                    <div class="bp-auth-login-signup bp-auth-register-signin">
+                        Already have an account?
+                        <a href="login.html">Sign In</a>
+                    </div>
+
+                    <!--- Security Note --->
+                    <div class="bp-auth-login-security">
+                        <i class="bi bi-shield-check"></i>
+                        <span>Your information is kept secure.</span>
+                    </div>
+
+                    <!--- Copyright --->
+                    <div class="bp-auth-login-copyright">
+                        © <span id="bp-auth-register-year"></span> Stackly. All rights reserved.
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!--- Register Page End --->
+
+    <!--- Authentication JavaScript --->
+    <script src="assets/js/auth.js" defer></script>
+</body>
+
+</html>

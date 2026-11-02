@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Stackly</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+
+<body class="bp-dash-body">
+
+    <!--- Dashboard Layout --->
+    <div class="bp-dash-layout">
+
+        <!--- Sidebar Overlay --->
+        <div class="bp-dash-overlay" id="bp-dash-overlay"></div>
+
+        <!--- Sidebar --->
+        <aside class="bp-dash-sidebar" id="bp-dash-sidebar">
+
+            <!--- Sidebar Logo --->
+            <div class="bp-dash-sidebar-brand">
+                <a href="index.html" class="bp-dash-brand-link">
+                    <img src="assets/images/brand-logo.webp" alt="">
+                </a>
+                <button type="button" class="bp-dash-sidebar-close" id="bp-dash-sidebar-close"
+                    aria-label="Close sidebar">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+
+            <!--- Mobile User Information --->
+            <div class="bp-dash-mobile-user">
+                <div class="bp-dash-mobile-avatar">
+                    <img src="assets/images/profile-1.webp" alt="">
+                </div>
+                <div class="bp-dash-mobile-user-info">
+                    <span class="bp-dash-user-label">Logged in as</span>
+                    <span class="bp-dash-mobile-email" id="bp-dashboard-sidebar-email">user@example.com</span>
+                </div>
+            </div>
+
+            <!--- Sidebar Navigation --->
+            <nav class="bp-dash-navigation">
+                <span class="bp-dash-nav-heading">WORKSPACE</span>
+
+                <a href="admin-dashboard.html" class="bp-dash-nav-link">
+                    <i class="bi bi-grid-1x2"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="admin-suppliers.html" class="bp-dash-nav-link">
+                    <i class="bi bi-buildings"></i>
+                    <span>Suppliers</span>
+                </a>
+
+                <a href="admin-products.html" class="bp-dash-nav-link">
+                    <i class="bi bi-box-seam"></i>
+                    <span>Products</span>
+                </a>
+
+                <a href="admin-purchase-orders.html" class="bp-dash-nav-link bp-dash-nav-active">
+                    <i class="bi bi-receipt"></i>
+                    <span>Purchase Orders</span>
+                </a>
+
+                <div class="bp-dash-nav-spacer"></div>
+
+                <!--- Logout --->
+                <button type="button" class="bp-dash-nav-link bp-dash-logout" id="bp-dashboard-logout">
+                    <i class="bi bi-box-arrow-right"></i>
+                    <span>Logout</span>
+                </button>
+            </nav>
+
+            <!--- Sidebar Footer --->
+            <div class="bp-dash-sidebar-footer">
+                <div class="bp-dash-sidebar-footer-icon">
+                    <i class="bi bi-shield-check"></i>
+                </div>
+                <div>
+                    <span class="bp-dash-sidebar-footer-title">Stackly Workspace</span>
+                    <span class="bp-dash-sidebar-footer-text">Procurement made simpler.</span>
+                </div>
+            </div>
+        </aside>
+
+        <!--- Main Area --->
+        <div class="bp-dash-main">
+
+            <!--- Topbar --->
+            <header class="bp-dash-topbar">
+
+                <!--- Topbar Left --->
+                <div class="bp-dash-topbar-left">
+                    <button type="button" class="bp-dash-menu-toggle" id="bp-dash-menu-toggle" aria-label="Open sidebar"
+                        aria-expanded="false">
+                        <i class="bi bi-three-dots"></i>
+                    </button>
+                    <div class="bp-dash-page-heading">
+                        <span class="bp-dash-page-eyebrow">WORKSPACE</span>
+                        <h1 id="bp-dash-page-title">Dashboard</h1>
+                    </div>
+                </div>
+
+                <!--- Topbar Right --->
+                <div class="bp-dash-topbar-right">
+                    <div class="bp-dash-topbar-email">
+                        <i class="bi bi-envelope"></i>
+                        <span id="bp-dashboard-user-email">user@example.com</span>
+                    </div>
+
+                    <div class="bp-dash-profile-wrap">
+                        <button type="button" class="bp-dash-profile-button" id="bp-dash-profile-button"
+                            aria-label="Open profile">
+                            <span class="bp-dash-profile-avatar">
+                                <img src="assets/images/profile-1.webp" alt="">
+                            </span>
+                            <i class="bi bi-chevron-down bp-dash-profile-chevron"></i>
+                        </button>
+                        <div class="bp-dash-profile-dropdown" id="bp-dash-profile-dropdown">
+                            <div class="bp-dash-profile-dropdown-info">
+                                <strong id="bp-dash-profile-name">My Account</strong>
+                                <span id="bp-dash-profile-dropdown-email">user@example.com</span>
+                            </div>
+                            <a href="404.html"><i class="bi bi-person"></i> My Profile</a>
+                            <button type="button" id="bp-dashboard-profile-logout">
+                                <i class="bi bi-box-arrow-right"></i> Logout
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!--- Dashboard Content --->
+            <main class="bp-dash-content">
+
+
+                <!--- Admin Purchase Orders Page --->
+                <div class="bp-apo-page">
+
+                    <!--- Page Heading --->
+                    <div class="bp-apo-heading">
+                        <div>
+                            <span class="bp-apo-eyebrow">PROCUREMENT MANAGEMENT</span>
+                            <h2>Purchase Orders</h2>
+                            <p>Create, track and manage purchase orders across your suppliers.</p>
+                        </div>
+                        <button type="button" class="bp-apo-add-btn" id="bp-apo-add-btn">
+                            <i class="bi bi-plus-lg"></i> Create Purchase Order
+                        </button>
+                    </div>
+
+                    <!--- Purchase Order Statistics --->
+                    <div class="bp-apo-stats">
+                        <div class="bp-apo-stat-card">
+                            <div class="bp-apo-stat-top">
+                                <span>Total Orders</span>
+                                <div class="bp-apo-stat-icon bp-apo-icon-blue"><i class="bi bi-receipt"></i></div>
+                            </div>
+                            <h3 id="bp-apo-total">0</h3>
+                            <small>All purchase orders</small>
+                        </div>
+
+                        <div class="bp-apo-stat-card">
+                            <div class="bp-apo-stat-top">
+                                <span>Pending Orders</span>
+                                <div class="bp-apo-stat-icon bp-apo-icon-orange"><i class="bi bi-clock-history"></i>
+                                </div>
+                            </div>
+                            <h3 id="bp-apo-pending">0</h3>
+                            <small>Awaiting confirmation</small>
+                        </div>
+
+                        <div class="bp-apo-stat-card">
+                            <div class="bp-apo-stat-top">
+                                <span>Completed Orders</span>
+                                <div class="bp-apo-stat-icon bp-apo-icon-green"><i class="bi bi-check-circle"></i></div>
+                            </div>
+                            <h3 id="bp-apo-completed">0</h3>
+                            <small>Successfully delivered</small>
+                        </div>
+
+                        <div class="bp-apo-stat-card">
+                            <div class="bp-apo-stat-top">
+                                <span>Total Order Value</span>
+                                <div class="bp-apo-stat-icon bp-apo-icon-purple"><i class="bi bi-currency-rupee"></i>
+                                </div>
+                            </div>
+                            <h3 id="bp-apo-value">₹0</h3>
+                            <small>Value of all orders</small>
+                        </div>
+                    </div>
+
+                    <!--- Purchase Orders Panel --->
+                    <div class="bp-apo-panel">
+
+                        <!--- Panel Heading --->
+                        <div class="bp-apo-panel-heading">
+                            <div>
+                                <h3>All Purchase Orders</h3>
+                                <p>Monitor order progress and supplier transactions.</p>
+                            </div>
+                            <button type="button" class="bp-apo-export-btn" id="bp-apo-export">
+                                <i class="bi bi-download"></i> Export CSV
+                            </button>
+                        </div>
+
+                        <!--- Search and Filters --->
+                        <div class="bp-apo-toolbar">
+                            <div class="bp-apo-search">
+                                <i class="bi bi-search"></i>
+                                <input type="search" id="bp-apo-search"
+                                    placeholder="Search order ID, supplier or product...">
+                                <button type="button" id="bp-apo-clear-search" aria-label="Clear search">
+                                    <i class="bi bi-x"></i>
+                                </button>
+                            </div>
+
+                            <select id="bp-apo-status-filter" aria-label="Filter by status">
+                                <option value="">All Status</option>
+                                <option value="Pending">Pending</option>
+                                <option value="Approved">Approved</option>
+                                <option value="Processing">Processing</option>
+                                <option value="Shipped">Shipped</option>
+                                <option value="Completed">Completed</option>
+                                <option value="Cancelled">Cancelled</option>
+                            </select>
+
+                            <select id="bp-apo-payment-filter" aria-label="Filter by payment status">
+                                <option value="">All Payments</option>
+                                <option value="Unpaid">Unpaid</option>
+                                <option value="Partial">Partial</option>
+                                <option value="Paid">Paid</option>
+                            </select>
+
+                            <button type="button" class="bp-apo-reset-btn" id="bp-apo-reset">
+                                <i class="bi bi-arrow-counterclockwise"></i> Reset
+                            </button>
+                        </div>
+
+                        <!--- Result Count --->
+                        <div class="bp-apo-results">
+                            Showing <strong id="bp-apo-showing">0</strong> of
+                            <strong id="bp-apo-result-total">0</strong> orders
+                        </div>
+
+                        <!--- Purchase Orders Table --->
+                        <div class="bp-apo-table-wrap">
+                            <table class="bp-apo-table">
+                                <thead>
+                                    <tr>
+                                        <th>ORDER ID</th>
+                                        <th>SUPPLIER</th>
+                                        <th>ORDER DATE</th>
+                                        <th>DELIVERY DATE</th>
+                                        <th>AMOUNT</th>
+                                        <th>PAYMENT</th>
+                                        <th>ORDER STATUS</th>
+                                        <th>ACTIONS</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="bp-apo-table-body"></tbody>
+                            </table>
+                        </div>
+
+                        <!--- Empty State --->
+                        <div class="bp-apo-empty" id="bp-apo-empty" hidden>
+                            <div class="bp-apo-empty-icon"><i class="bi bi-receipt"></i></div>
+                            <h4>No purchase orders found</h4>
+                            <p>Try changing your filters or create a new purchase order.</p>
+                            <button type="button" id="bp-apo-empty-reset">Clear Filters</button>
+                        </div>
+
+                        <!--- Pagination --->
+                        <div class="bp-apo-pagination-wrap">
+                            <span id="bp-apo-page-info">Page 1 of 1</span>
+                            <div class="bp-apo-pagination" id="bp-apo-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Create Edit Purchase Order Modal --->
+                <div class="bp-apo-modal" id="bp-apo-form-modal" aria-hidden="true">
+                    <div class="bp-apo-modal-backdrop" data-apo-close></div>
+
+                    <div class="bp-apo-modal-dialog">
+                        <div class="bp-apo-modal-header">
+                            <div>
+                                <span>PROCUREMENT MANAGEMENT</span>
+                                <h3 id="bp-apo-form-title">Create Purchase Order</h3>
+                            </div>
+                            <button type="button" data-apo-close aria-label="Close">
+                                <i class="bi bi-x-lg"></i>
+                            </button>
+                        </div>
+
+                        <form id="bp-apo-form" novalidate>
+                            <input type="hidden" id="bp-apo-edit-id">
+
+                            <div class="bp-apo-form-body">
+
+                                <!--- Order Information --->
+                                <div class="bp-apo-form-section-title">Order Information</div>
+
+                                <div class="bp-apo-form-row">
+                                    <div class="bp-apo-form-group">
+                                        <label for="bp-apo-order-id">Order ID</label>
+                                        <input type="text" id="bp-apo-order-id" readonly>
+                                    </div>
+                                    <div class="bp-apo-form-group">
+                                        <label for="bp-apo-order-date">Order Date <span>*</span></label>
+                                        <input type="date" id="bp-apo-order-date">
+                                        <small class="bp-apo-error" id="bp-apo-order-date-error"></small>
+                                    </div>
+                                </div>
+
+                                <div class="bp-apo-form-row">
+                                    <div class="bp-apo-form-group">
+                                        <label for="bp-apo-supplier">Supplier Name <span>*</span></label>
+                                        <input type="text" id="bp-apo-supplier" placeholder="Enter supplier name">
+                                        <small class="bp-apo-error" id="bp-apo-supplier-error"></small>
+                                    </div>
+                                    <div class="bp-apo-form-group">
+                                        <label for="bp-apo-delivery-date">Expected Delivery <span>*</span></label>
+                                        <input type="date" id="bp-apo-delivery-date">
+                                        <small class="bp-apo-error" id="bp-apo-delivery-date-error"></small>
+                                    </div>
+                                </div>
+
+                                <!--- Product Information --->
+                                <div class="bp-apo-form-section-title">Product Information</div>
+
+                                <div class="bp-apo-form-group">
+                                    <label for="bp-apo-product">Product Name <span>*</span></label>
+                                    <input type="text" id="bp-apo-product" placeholder="Enter product name">
+                                    <small class="bp-apo-error" id="bp-apo-product-error"></small>
+                                </div>
+
+                                <div class="bp-apo-form-row">
+                                    <div class="bp-apo-form-group">
+                                        <label for="bp-apo-quantity">Quantity <span>*</span></label>
+                                        <input type="number" id="bp-apo-quantity" min="1" step="1"
+                                            placeholder="Enter quantity">
+                                        <small class="bp-apo-error" id="bp-apo-quantity-error"></small>
+                                    </div>
+                                    <div class="bp-apo-form-group">
+                                        <label for="bp-apo-unit-price">Unit Price (₹) <span>*</span></label>
+                                        <input type="number" id="bp-apo-unit-price" min="0.01" step="0.01"
+                                            placeholder="0.00">
+                                        <small class="bp-apo-error" id="bp-apo-unit-price-error"></small>
+                                    </div>
+                                </div>
+
+                                <div class="bp-apo-total-preview">
+                                    <span>Order Total</span>
+                                    <strong id="bp-apo-total-preview">₹0.00</strong>
+                                </div>
+
+                                <!--- Payment and Status --->
+                                <div class="bp-apo-form-section-title">Payment & Order Status</div>
+
+                                <div class="bp-apo-form-row">
+                                    <div class="bp-apo-form-group">
+                                        <label for="bp-apo-payment">Payment Status</label>
+                                        <select id="bp-apo-payment">
+                                            <option value="Unpaid">Unpaid</option>
+                                            <option value="Partial">Partial</option>
+                                            <option value="Paid">Paid</option>
+                                        </select>
+                                    </div>
+                                    <div class="bp-apo-form-group">
+                                        <label for="bp-apo-status">Order Status</label>
+                                        <select id="bp-apo-status">
+                                            <option value="Pending">Pending</option>
+                                            <option value="Approved">Approved</option>
+                                            <option value="Processing">Processing</option>
+                                            <option value="Shipped">Shipped</option>
+                                            <option value="Completed">Completed</option>
+                                            <option value="Cancelled">Cancelled</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="bp-apo-form-group">
+                                    <label for="bp-apo-notes">Order Notes</label>
+                                    <textarea id="bp-apo-notes" rows="3"
+                                        placeholder="Additional instructions or notes..."></textarea>
+                                </div>
+
+                                <div class="bp-apo-form-message" id="bp-apo-form-message"></div>
+                            </div>
+
+                            <div class="bp-apo-modal-footer">
+                                <button type="button" class="bp-apo-cancel-btn" data-apo-close>Cancel</button>
+                                <button type="submit" class="bp-apo-save-btn" id="bp-apo-save-btn">
+                                    <i class="bi bi-check-lg"></i> Save Order
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!--- View Purchase Order Modal --->
+                <div class="bp-apo-modal" id="bp-apo-view-modal" aria-hidden="true">
+                    <div class="bp-apo-modal-backdrop" data-apo-close></div>
+
+                    <div class="bp-apo-modal-dialog bp-apo-view-dialog">
+                        <div class="bp-apo-modal-header">
+                            <div>
+                                <span>ORDER DETAILS</span>
+                                <h3>Purchase Order Information</h3>
+                            </div>
+                            <button type="button" data-apo-close aria-label="Close">
+                                <i class="bi bi-x-lg"></i>
+                            </button>
+                        </div>
+
+                        <div class="bp-apo-view-content" id="bp-apo-view-content"></div>
+
+                        <div class="bp-apo-modal-footer">
+                            <button type="button" class="bp-apo-cancel-btn" data-apo-close>Close</button>
+                            <button type="button" class="bp-apo-save-btn" id="bp-apo-view-edit">
+                                <i class="bi bi-pencil"></i> Edit Order
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Delete Confirmation Modal --->
+                <div class="bp-apo-modal" id="bp-apo-confirm-modal" aria-hidden="true">
+                    <div class="bp-apo-modal-backdrop" data-apo-close></div>
+
+                    <div class="bp-apo-modal-dialog bp-apo-confirm-dialog">
+                        <div class="bp-apo-confirm-icon"><i class="bi bi-trash3"></i></div>
+                        <h3>Delete Purchase Order?</h3>
+                        <p id="bp-apo-confirm-message">Are you sure you want to delete this order?</p>
+                        <div class="bp-apo-confirm-actions">
+                            <button type="button" class="bp-apo-cancel-btn" data-apo-close>Cancel</button>
+                            <button type="button" class="bp-apo-delete-btn" id="bp-apo-confirm-action">Delete
+                                Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Purchase Order Toast --->
+                <div class="bp-apo-toast" id="bp-apo-toast">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span id="bp-apo-toast-message">Order updated successfully.</span>
+                </div>
+
+                <!--- Dashboard Copyright --->
+                <footer class="bp-dash-content-footer">
+                    <span>© <span id="bp-dash-footer-year"></span> Stackly. All rights reserved.</span>
+                    <span>Built for better business buying.</span>
+                </footer>
+
+            </main>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/admin-orders.js"></script>
+</body>
+
+</html>

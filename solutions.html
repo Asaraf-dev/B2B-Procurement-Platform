@@ -1,0 +1,937 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solution | B2B Procurement Platform</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Main favicon -->
+  <link rel="icon" href="favicon.ico" />
+
+  <!-- webp favicons -->
+  <link rel="icon" type="image/webp" sizes="16x16" href="assets/images/favicon-16x16.png" />
+  <link rel="icon" type="image/webp" sizes="32x32" href="assets/images/favicon-32x32.png" />
+
+  <!-- Apple -->
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+
+  <!-- Android -->
+  <link rel="icon" type="image/webp" sizes="192x192" href="assets/images/android-chrome-192x192.png" />
+  <link rel="icon" type="image/webp" sizes="512x512" href="assets/images/android-chrome-512x512.png" />
+
+  <!-- Manifest -->
+  <link rel="manifest" href="assets/images/site.webmanifest" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!--- Bootstrap Icon --->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <link rel="stylesheet" href="assets/css/loader.css" />
+  <link rel="stylesheet" href="assets/css/navbar.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+  <!--- Loader Start --->
+  <div class="bp-ldr-loader" id="bp-ldr-loader" role="status" aria-live="polite" aria-label="Loading Stackly">
+    <div class="bp-ldr-background" aria-hidden="true">
+      <span class="bp-ldr-orb bp-ldr-orb-one"></span>
+      <span class="bp-ldr-orb bp-ldr-orb-two"></span>
+      <div class="bp-ldr-grid"></div>
+      <div class="bp-ldr-particles" id="bp-ldr-particles"></div>
+    </div>
+    <div class="bp-ldr-content">
+      <a href="index.html" class="bp-ldr-brand" aria-label="Stackly home">
+        <img src="assets/images/brand-logo.webp" alt="Stackly" class="bp-ldr-logo">
+      </a>
+      <div class="bp-ldr-animation" aria-hidden="true">
+        <div class="bp-ldr-ring bp-ldr-ring-outer"></div>
+        <div class="bp-ldr-ring bp-ldr-ring-middle"></div>
+        <div class="bp-ldr-ring bp-ldr-ring-inner"></div>
+        <div class="bp-ldr-icon-wrap">
+          <i class="bi bi-box-seam bp-ldr-main-icon"></i>
+        </div>
+        <span class="bp-ldr-orbit-dot bp-ldr-dot-one"></span>
+        <span class="bp-ldr-orbit-dot bp-ldr-dot-two"></span>
+        <span class="bp-ldr-orbit-dot bp-ldr-dot-three"></span>
+      </div>
+      <div class="bp-ldr-copy">
+        <span class="bp-ldr-eyebrow"><span class="bp-ldr-status-dot"></span> SMARTER PROCUREMENT</span>
+        <h2 class="bp-ldr-title">Business in motion<span>.</span></h2>
+        <p class="bp-ldr-message" id="bp-ldr-message">Connecting your business...</p>
+      </div>
+      <div class="bp-ldr-bottom">
+        <span>BUY SMARTER</span>
+        <span class="bp-ldr-bottom-line"></span>
+        <span>BUILD STRONGER</span>
+      </div>
+    </div>
+  </div>
+  <!--- Loader End --->
+
+  <!--- Navbar Component --->
+  <div id="bp-com-navbar-container"></div>
+
+  <!--- Sub Hero Section Start --->
+  <section class="bp-com-hero" id="bp-com-hero" data-bp-hero>
+    <div class="bp-com-hero-bg" aria-hidden="true">
+      <span class="bp-com-hero-glow bp-com-hero-glow-one"></span>
+      <span class="bp-com-hero-glow bp-com-hero-glow-two"></span>
+      <div class="bp-com-hero-grid"></div>
+      <span class="bp-com-hero-orb bp-com-hero-orb-one"></span>
+      <span class="bp-com-hero-orb bp-com-hero-orb-two"></span>
+    </div>
+    <div class="container">
+      <div class="bp-com-hero-layout">
+        <div class="bp-com-hero-content">
+          <nav class="bp-com-hero-breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html"><i class="bi bi-house-door"></i> Home</a>
+            <i class="bi bi-chevron-right bp-com-hero-breadcrumb-separator" aria-hidden="true"></i>
+            <span aria-current="page">Solution</span>
+          </nav>
+          <div class="bp-com-hero-eyebrow"><span class="bp-com-hero-eyebrow-dot"></span><span>GET TO KNOW
+              STACKLY</span><span class="bp-com-hero-eyebrow-line"></span></div>
+          <h1 class="bp-com-hero-title">Building a smarter future for <span>business procurement.</span></h1>
+          <p class="bp-com-hero-description">Discover a more connected way to manage purchasing, explore
+            supplier opportunities, and bring business workflows together on one platform.</p>
+          <div class="bp-com-hero-actions">
+            <a href="404.html" class="bp-com-hero-primary-btn">Explore our solutions <i
+                class="bi bi-arrow-up-right"></i></a>
+            <a href="404.html" class="bp-com-hero-secondary-btn"><span class="bp-com-hero-play-icon"><i
+                  class="bi bi-chat-square-text"></i></span> Talk to our team</a>
+          </div>
+          <div class="bp-com-hero-highlights">
+            <div class="bp-com-hero-highlight"><span class="bp-com-hero-highlight-icon"><i
+                  class="bi bi-diagram-3"></i></span><span><strong>Connected</strong><small>Business
+                  workflows</small></span></div>
+            <span class="bp-com-hero-highlight-divider"></span>
+            <div class="bp-com-hero-highlight"><span
+                class="bp-com-hero-highlight-icon bp-com-hero-highlight-icon-teal"><i
+                  class="bi bi-box-seam"></i></span><span><strong>Organized</strong><small>Procurement
+                  journey</small></span></div>
+          </div>
+        </div>
+        <div class="bp-com-hero-visual" data-bp-hero-visual>
+          <div class="bp-com-hero-visual-orbit bp-com-hero-visual-orbit-one"></div>
+          <div class="bp-com-hero-visual-orbit bp-com-hero-visual-orbit-two"></div>
+          <div class="bp-com-hero-visual-orbit bp-com-hero-visual-orbit-three"></div>
+          <div class="bp-com-hero-dashboard">
+            <div class="bp-com-hero-dashboard-top">
+              <div class="bp-com-hero-dashboard-brand"><span class="bp-com-hero-dashboard-brand-icon"><i
+                    class="bi bi-box-seam"></i></span><span><strong>Stackly</strong><small>PROCUREMENT
+                    WORKSPACE</small></span></div>
+              <button type="button" class="bp-com-hero-dashboard-menu" aria-label="Show workspace overview"
+                data-bp-hero-demo><i class="bi bi-three-dots"></i></button>
+            </div>
+            <div class="bp-com-hero-dashboard-welcome"><span>YOUR WORKSPACE</span><strong>Everything,
+                connected.</strong><small>One clearer view of your procurement journey.</small></div>
+            <div class="bp-com-hero-dashboard-stats">
+              <div class="bp-com-hero-stat"><span class="bp-com-hero-stat-icon"><i
+                    class="bi bi-search"></i></span><span><small>SOURCING</small><strong>Discover</strong></span><i
+                  class="bi bi-arrow-up-right"></i></div>
+              <div class="bp-com-hero-stat"><span class="bp-com-hero-stat-icon bp-com-hero-stat-teal"><i
+                    class="bi bi-receipt"></i></span><span><small>ORDERS</small><strong>Organize</strong></span><i
+                  class="bi bi-arrow-up-right"></i></div>
+            </div>
+            <div class="bp-com-hero-dashboard-workflow">
+              <div class="bp-com-hero-workflow-heading"><strong>Procurement
+                  workflow</strong><span>OVERVIEW</span></div>
+              <div class="bp-com-hero-workflow-step"><span class="bp-com-hero-workflow-number">01</span><span
+                  class="bp-com-hero-workflow-copy"><strong>Discover suppliers</strong><small>Explore
+                    available options</small></span><i class="bi bi-check-circle-fill"></i></div>
+              <div class="bp-com-hero-workflow-step"><span
+                  class="bp-com-hero-workflow-number bp-com-hero-workflow-number-teal">02</span><span
+                  class="bp-com-hero-workflow-copy"><strong>Manage purchasing</strong><small>Keep
+                    requests organized</small></span><i class="bi bi-arrow-up-right"></i></div>
+              <div class="bp-com-hero-workflow-step"><span
+                  class="bp-com-hero-workflow-number bp-com-hero-workflow-number-amber">03</span><span
+                  class="bp-com-hero-workflow-copy"><strong>Connect your teams</strong><small>Move
+                    work forward together</small></span><i class="bi bi-arrow-up-right"></i></div>
+            </div>
+            <div class="bp-com-hero-dashboard-footer"><span
+                class="bp-com-hero-dashboard-status-dot"></span><span>Designed for connected
+                procurement</span><i class="bi bi-shield-check"></i></div>
+          </div>
+          <div class="bp-com-hero-float-card bp-com-hero-float-supplier"><span class="bp-com-hero-float-icon"><i
+                class="bi bi-buildings"></i></span><span><strong>Supplier
+                network</strong><small>Discover new connections</small></span><i class="bi bi-check-circle-fill"></i>
+          </div>
+          <div class="bp-com-hero-float-card bp-com-hero-float-orders"><span
+              class="bp-com-hero-float-icon bp-com-hero-float-icon-teal"><i
+                class="bi bi-clipboard-check"></i></span><span><strong>Orders in one
+                place</strong><small>Stay organized</small></span></div>
+          <div class="bp-com-hero-visual-caption"><span class="bp-com-hero-caption-icon"><i
+                class="bi bi-stars"></i></span><span><strong>Procurement,
+                reimagined.</strong><small>Less fragmentation. More connection.</small></span></div>
+          <span class="bp-com-hero-visual-dot bp-com-hero-visual-dot-one"></span>
+          <span class="bp-com-hero-visual-dot bp-com-hero-visual-dot-two"></span>
+        </div>
+      </div>
+      <div class="bp-com-hero-bottom">
+        <span class="bp-com-hero-bottom-label">A BETTER WAY TO WORK</span>
+        <span class="bp-com-hero-bottom-line"></span>
+        <div class="bp-com-hero-bottom-item"><i class="bi bi-search"></i> Smarter sourcing</div>
+        <div class="bp-com-hero-bottom-item"><i class="bi bi-arrow-left-right"></i> Better collaboration</div>
+        <div class="bp-com-hero-bottom-item"><i class="bi bi-layers"></i> Connected workflows</div>
+      </div>
+    </div>
+  </section>
+  <!--- Sub Hero Section End --->
+
+  <!--- Solutions Overview Section Start --->
+  <section class="bp-sol-overview-section" id="solutions-overview">
+    <div class="container">
+
+      <!--- Section Heading --->
+      <div class="bp-sol-overview-heading">
+        <div class="bp-sol-overview-heading-content">
+          <span class="bp-sol-overview-eyebrow">
+            <span></span> ONE CONNECTED PLATFORM
+          </span>
+          <h2>
+            Everything procurement needs.
+            <span>All in one place.</span>
+          </h2>
+          <p>
+            From finding trusted suppliers to managing orders and building
+            stronger business relationships, Stackly brings every step
+            of procurement into one connected workspace.
+          </p>
+        </div>
+        <a href="404.html" class="bp-sol-overview-heading-link">
+          Find your solution
+          <i class="bi bi-arrow-up-right"></i>
+        </a>
+      </div>
+
+      <!--- Featured Solution --->
+      <div class="bp-sol-overview-featured">
+        <div class="bp-sol-overview-featured-content">
+          <span class="bp-sol-overview-featured-label">
+            <i class="bi bi-stars"></i> THE CONNECTED PROCUREMENT EXPERIENCE
+          </span>
+          <h3>Make every purchasing decision more connected.</h3>
+          <p>
+            Bring supplier information, purchasing activities and
+            product management together. Give your team a clearer
+            view of the procurement process from start to finish.
+          </p>
+          <a href="404.html" class="bp-sol-overview-featured-link">
+            Explore platform capabilities
+            <i class="bi bi-arrow-right"></i>
+          </a>
+          <div class="bp-sol-overview-featured-points">
+            <span><i class="bi bi-check-circle-fill"></i> Connected workflows</span>
+            <span><i class="bi bi-check-circle-fill"></i> Better visibility</span>
+            <span><i class="bi bi-check-circle-fill"></i> Organized operations</span>
+          </div>
+        </div>
+
+        <!--- Featured Visual --->
+        <div class="bp-sol-overview-featured-visual">
+          <div class="bp-sol-overview-visual-glow"></div>
+          <div class="bp-sol-overview-workspace">
+
+            <div class="bp-sol-overview-workspace-top">
+              <div class="bp-sol-overview-workspace-brand">
+                <span><i class="bi bi-grid-1x2-fill"></i></span>
+                <strong>Procurement workspace</strong>
+              </div>
+              <span class="bp-sol-overview-workspace-live">
+                <span></span> Live workspace
+              </span>
+            </div>
+
+            <div class="bp-sol-overview-workspace-welcome">
+              <div>
+                <small>YOUR BUSINESS OVERVIEW</small>
+                <h4>Procurement at a glance</h4>
+              </div>
+              <i class="bi bi-three-dots"></i>
+            </div>
+
+            <div class="bp-sol-overview-workspace-stats">
+              <div class="bp-sol-overview-stat">
+                <span class="bp-sol-overview-stat-icon blue">
+                  <i class="bi bi-cart-check"></i>
+                </span>
+                <small>Purchase orders</small>
+                <strong>Managed</strong>
+                <span>In one workspace</span>
+              </div>
+              <div class="bp-sol-overview-stat">
+                <span class="bp-sol-overview-stat-icon green">
+                  <i class="bi bi-buildings"></i>
+                </span>
+                <small>Supplier network</small>
+                <strong>Connected</strong>
+                <span>Better relationships</span>
+              </div>
+            </div>
+
+            <div class="bp-sol-overview-workspace-bottom">
+              <div>
+                <span class="bp-sol-overview-workspace-bottom-icon">
+                  <i class="bi bi-diagram-3"></i>
+                </span>
+                <div>
+                  <strong>Connected operations</strong>
+                  <small>All procurement activities in sync</small>
+                </div>
+              </div>
+              <i class="bi bi-arrow-up-right"></i>
+            </div>
+          </div>
+
+          <div class="bp-sol-overview-float-card">
+            <span><i class="bi bi-check2-circle"></i></span>
+            <div>
+              <strong>One connected process</strong>
+              <small>From discovery to delivery</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--- Solution Cards Heading --->
+      <div class="bp-sol-overview-cards-heading">
+        <div>
+          <span>EXPLORE OUR CAPABILITIES</span>
+          <h3>Tools that move your business forward.</h3>
+        </div>
+        <p>
+          Purposeful capabilities designed to simplify the way
+          buyers and suppliers work together.
+        </p>
+      </div>
+
+      <!--- Solution Cards --->
+      <div class="bp-sol-overview-grid">
+
+        <!--- Supplier Discovery --->
+        <a class="bp-sol-overview-card bp-sol-overview-card-one">
+          <div class="bp-sol-overview-card-top">
+            <span class="bp-sol-overview-card-icon">
+              <i class="bi bi-search"></i>
+            </span>
+            <span class="bp-sol-overview-card-number">01</span>
+          </div>
+          <div class="bp-sol-overview-card-visual bp-sol-overview-supplier-visual">
+            <div class="bp-sol-overview-mini-window">
+              <div class="bp-sol-overview-mini-header">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="bp-sol-overview-supplier-row">
+                <span><i class="bi bi-buildings"></i></span>
+                <div><strong>Supplier network</strong><small>Discover businesses</small></div>
+                <i class="bi bi-check-circle-fill"></i>
+              </div>
+              <div class="bp-sol-overview-supplier-row">
+                <span><i class="bi bi-patch-check"></i></span>
+                <div><strong>Supplier profiles</strong><small>Explore capabilities</small></div>
+                <i class="bi bi-arrow-up-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="bp-sol-overview-card-body">
+            <h4>Supplier Discovery</h4>
+            <p>Find potential suppliers, explore business profiles and build valuable connections.</p>
+            <span class="bp-sol-overview-card-link">
+              Explore solution <i class="bi bi-arrow-up-right"></i>
+            </span>
+          </div>
+        </a>
+
+        <!--- Purchase Order Management --->
+        <a class="bp-sol-overview-card bp-sol-overview-card-two">
+          <div class="bp-sol-overview-card-top">
+            <span class="bp-sol-overview-card-icon">
+              <i class="bi bi-receipt"></i>
+            </span>
+            <span class="bp-sol-overview-card-number">02</span>
+          </div>
+          <div class="bp-sol-overview-card-visual bp-sol-overview-order-visual">
+            <div class="bp-sol-overview-order-preview">
+              <div class="bp-sol-overview-order-title">
+                <span>Purchase order</span>
+                <span>PO-2048</span>
+              </div>
+              <div class="bp-sol-overview-order-line"><span></span><span></span></div>
+              <div class="bp-sol-overview-order-line short"><span></span><span></span></div>
+              <div class="bp-sol-overview-order-status">
+                <i class="bi bi-check-circle-fill"></i> Order organized
+              </div>
+            </div>
+          </div>
+          <div class="bp-sol-overview-card-body">
+            <h4>Purchase Order Management</h4>
+            <p>Create, organize and track purchase orders with a clearer view of every transaction.</p>
+            <span class="bp-sol-overview-card-link">
+              Explore solution <i class="bi bi-arrow-up-right"></i>
+            </span>
+          </div>
+        </a>
+
+        <!--- Product and Catalog Management --->
+        <a class="bp-sol-overview-card bp-sol-overview-card-three">
+          <div class="bp-sol-overview-card-top">
+            <span class="bp-sol-overview-card-icon">
+              <i class="bi bi-box-seam"></i>
+            </span>
+            <span class="bp-sol-overview-card-number">03</span>
+          </div>
+          <div class="bp-sol-overview-card-visual bp-sol-overview-product-visual">
+            <div class="bp-sol-overview-product-preview">
+              <div><i class="bi bi-box"></i><span></span></div>
+              <div><i class="bi bi-boxes"></i><span></span></div>
+              <div><i class="bi bi-archive"></i><span></span></div>
+            </div>
+            <div class="bp-sol-overview-product-caption">
+              <i class="bi bi-grid-fill"></i> Organized product catalog
+            </div>
+          </div>
+          <div class="bp-sol-overview-card-body">
+            <h4>Product & Catalog Management</h4>
+            <p>Keep product details, catalogs and purchasing information organized and accessible.</p>
+            <span class="bp-sol-overview-card-link">
+              Explore solution <i class="bi bi-arrow-up-right"></i>
+            </span>
+          </div>
+        </a>
+
+        <!--- Buyer and Supplier Collaboration --->
+        <a class="bp-sol-overview-card bp-sol-overview-card-four">
+          <div class="bp-sol-overview-card-top">
+            <span class="bp-sol-overview-card-icon">
+              <i class="bi bi-people"></i>
+            </span>
+            <span class="bp-sol-overview-card-number">04</span>
+          </div>
+          <div class="bp-sol-overview-card-visual bp-sol-overview-collab-visual">
+            <div class="bp-sol-overview-collab-preview">
+              <div class="bp-sol-overview-collab-avatar"><i class="bi bi-person"></i></div>
+              <span class="bp-sol-overview-collab-line"></span>
+              <div class="bp-sol-overview-collab-center"><i class="bi bi-arrow-left-right"></i></div>
+              <span class="bp-sol-overview-collab-line"></span>
+              <div class="bp-sol-overview-collab-avatar second"><i class="bi bi-building"></i></div>
+            </div>
+            <div class="bp-sol-overview-collab-caption">
+              <i class="bi bi-chat-square-text"></i> Working better together
+            </div>
+          </div>
+          <div class="bp-sol-overview-card-body">
+            <h4>Buyer & Supplier Collaboration</h4>
+            <p>Bring business partners closer with more organized communication and coordination.</p>
+            <span class="bp-sol-overview-card-link">
+              Explore solution <i class="bi bi-arrow-up-right"></i>
+            </span>
+          </div>
+        </a>
+
+      </div>
+
+      <!--- Overview Bottom Note --->
+      <div class="bp-sol-overview-bottom">
+        <div class="bp-sol-overview-bottom-icon">
+          <i class="bi bi-lightbulb"></i>
+        </div>
+        <p>
+          Every capability works toward one goal:
+          <strong>making procurement simpler, clearer and more connected.</strong>
+        </p>
+        <a href="404.html">Let's talk <i class="bi bi-arrow-up-right"></i></a>
+      </div>
+
+    </div>
+  </section>
+  <!--- Solutions Overview Section End --->
+
+  <!--- Detailed Solution Showcase Section Start --->
+  <section class="bp-sol-details-section" id="solution-details">
+    <div class="container">
+
+      <!--- Section Heading --->
+      <div class="bp-sol-details-heading">
+        <span class="bp-sol-details-eyebrow">
+          <span></span> A CLOSER LOOK AT STACKLY
+        </span>
+        <h2>Powerful solutions for <span>better procurement.</span></h2>
+        <p>
+          Explore the capabilities that help your team discover suppliers,
+          manage purchasing, organize products and work better together.
+        </p>
+      </div>
+
+      <!--- Solution 01: Supplier Discovery --->
+      <article class="bp-sol-detail bp-sol-detail-supplier">
+        <div class="bp-sol-detail-content">
+          <div class="bp-sol-detail-number">01 <span>/ 04</span></div>
+          <div class="bp-sol-detail-icon"><i class="bi bi-search"></i></div>
+          <span class="bp-sol-detail-label">FIND THE RIGHT PARTNERS</span>
+          <h3>Discover suppliers. <span>Build better connections.</span></h3>
+          <p>
+            Find potential business partners and explore supplier information
+            in one organized place. Make supplier discovery a more structured
+            part of your purchasing process.
+          </p>
+
+          <ul class="bp-sol-detail-features">
+            <li><i class="bi bi-check-circle-fill"></i> Explore supplier profiles and business details</li>
+            <li><i class="bi bi-check-circle-fill"></i> Review supplier capabilities and offerings</li>
+            <li><i class="bi bi-check-circle-fill"></i> Organize potential supplier relationships</li>
+          </ul>
+
+          <a href="404.html" class="bp-sol-detail-link">
+            Explore supplier discovery <i class="bi bi-arrow-up-right"></i>
+          </a>
+        </div>
+
+        <!--- Supplier Discovery Visual --->
+        <div class="bp-sol-detail-visual bp-sol-detail-supplier-visual">
+          <div class="bp-sol-detail-visual-heading">
+            <div>
+              <span>SUPPLIER DIRECTORY</span>
+              <h4>Find your next business partner</h4>
+            </div>
+            <span class="bp-sol-detail-visual-menu"><i class="bi bi-three-dots"></i></span>
+          </div>
+
+          <div class="bp-sol-detail-search">
+            <i class="bi bi-search"></i>
+            <span>Search suppliers, products or services...</span>
+            <i class="bi bi-sliders"></i>
+          </div>
+
+          <div class="bp-sol-detail-supplier-list">
+            <div class="bp-sol-detail-supplier-item">
+              <span class="bp-sol-detail-company-icon blue"><i class="bi bi-buildings"></i></span>
+              <div class="bp-sol-detail-company-info">
+                <strong>Northstar Industries</strong>
+                <small>Industrial equipment · Manufacturing</small>
+              </div>
+              <span class="bp-sol-detail-company-tag">Supplier</span>
+            </div>
+            <div class="bp-sol-detail-supplier-item">
+              <span class="bp-sol-detail-company-icon green"><i class="bi bi-box-seam"></i></span>
+              <div class="bp-sol-detail-company-info">
+                <strong>Vertex Supply Co.</strong>
+                <small>Wholesale · Distribution</small>
+              </div>
+              <span class="bp-sol-detail-company-tag">Supplier</span>
+            </div>
+            <div class="bp-sol-detail-supplier-item">
+              <span class="bp-sol-detail-company-icon purple"><i class="bi bi-gear"></i></span>
+              <div class="bp-sol-detail-company-info">
+                <strong>Precision Works</strong>
+                <small>Components · Engineering</small>
+              </div>
+              <span class="bp-sol-detail-company-tag">Supplier</span>
+            </div>
+          </div>
+
+          <div class="bp-sol-detail-visual-footer">
+            <i class="bi bi-info-circle"></i>
+            <span>Illustrative supplier directory preview</span>
+          </div>
+
+          <div class="bp-sol-detail-floating bp-sol-detail-floating-supplier">
+            <span><i class="bi bi-diagram-3"></i></span>
+            <div><strong>Supplier network</strong><small>Explore business connections</small></div>
+          </div>
+        </div>
+      </article>
+
+      <!--- Solution 02: Purchase Order Management --->
+      <article class="bp-sol-detail bp-sol-detail-reverse">
+        <div class="bp-sol-detail-content">
+          <div class="bp-sol-detail-number">02 <span>/ 04</span></div>
+          <div class="bp-sol-detail-icon green"><i class="bi bi-receipt-cutoff"></i></div>
+          <span class="bp-sol-detail-label">KEEP PURCHASING ORGANIZED</span>
+          <h3>Manage purchase orders. <span>Stay in control.</span></h3>
+          <p>
+            Keep purchasing activities organized with a clearer view of
+            order information and progress. Bring important purchase order
+            details together for easier day-to-day management.
+          </p>
+
+          <ul class="bp-sol-detail-features">
+            <li><i class="bi bi-check-circle-fill"></i> Create and organize purchase orders</li>
+            <li><i class="bi bi-check-circle-fill"></i> Keep order details accessible</li>
+            <li><i class="bi bi-check-circle-fill"></i> Follow order progress in one place</li>
+          </ul>
+
+          <a href="404.html" class="bp-sol-detail-link green">
+            Explore order management <i class="bi bi-arrow-up-right"></i>
+          </a>
+        </div>
+
+        <!--- Purchase Order Visual --->
+        <div class="bp-sol-detail-visual bp-sol-detail-order-visual">
+          <div class="bp-sol-detail-visual-heading">
+            <div>
+              <span>PURCHASE MANAGEMENT</span>
+              <h4>Purchase orders overview</h4>
+            </div>
+            <span class="bp-sol-detail-order-add"><i class="bi bi-plus-lg"></i> New order</span>
+          </div>
+
+          <div class="bp-sol-detail-order-summary">
+            <div><small>ORDER REFERENCE</small><strong>PO-2026-048</strong></div>
+            <div><small>ORDER STATUS</small><strong class="bp-sol-detail-order-status"><span></span> In
+                progress</strong></div>
+          </div>
+
+          <div class="bp-sol-detail-order-table">
+            <div class="bp-sol-detail-order-table-head"><span>ITEM
+                DETAILS</span><span>QUANTITY</span><span>STATUS</span></div>
+            <div class="bp-sol-detail-order-row"><span><i class="bi bi-box"></i> Industrial components</span><span>120
+                units</span><span class="complete">Ready</span></div>
+            <div class="bp-sol-detail-order-row"><span><i class="bi bi-box"></i> Supply materials</span><span>80
+                units</span><span class="pending">Pending</span></div>
+            <div class="bp-sol-detail-order-row"><span><i class="bi bi-box"></i> Equipment parts</span><span>45
+                units</span><span class="complete">Ready</span></div>
+          </div>
+
+          <div class="bp-sol-detail-order-progress">
+            <div><strong>Order progress</strong><span>Organized tracking</span></div>
+            <div class="bp-sol-detail-progress-track"><span></span></div>
+          </div>
+
+          <div class="bp-sol-detail-visual-footer">
+            <i class="bi bi-info-circle"></i>
+            <span>Illustrative purchase order preview</span>
+          </div>
+        </div>
+      </article>
+
+      <!--- Solution 03: Product and Catalog Management --->
+      <article class="bp-sol-detail bp-sol-detail-product">
+        <div class="bp-sol-detail-content">
+          <div class="bp-sol-detail-number">03 <span>/ 04</span></div>
+          <div class="bp-sol-detail-icon purple"><i class="bi bi-boxes"></i></div>
+          <span class="bp-sol-detail-label">BRING PRODUCT INFORMATION TOGETHER</span>
+          <h3>Organize products. <span>Simplify selection.</span></h3>
+          <p>
+            Keep product information and catalog details structured and
+            easy to access. Help purchasing teams work with more consistent
+            product information throughout the buying process.
+          </p>
+
+          <ul class="bp-sol-detail-features">
+            <li><i class="bi bi-check-circle-fill"></i> Maintain organized product information</li>
+            <li><i class="bi bi-check-circle-fill"></i> Structure product catalogs for easier browsing</li>
+            <li><i class="bi bi-check-circle-fill"></i> Make product details easier to compare</li>
+          </ul>
+
+          <a href="404.html" class="bp-sol-detail-link purple">
+            Explore product management <i class="bi bi-arrow-up-right"></i>
+          </a>
+        </div>
+
+        <!--- Product Catalog Visual --->
+        <div class="bp-sol-detail-visual bp-sol-detail-product-visual">
+          <div class="bp-sol-detail-visual-heading">
+            <div>
+              <span>PRODUCT CATALOG</span>
+              <h4>Browse organized products</h4>
+            </div>
+            <span class="bp-sol-detail-visual-menu"><i class="bi bi-three-dots"></i></span>
+          </div>
+
+          <div class="bp-sol-detail-product-toolbar">
+            <span><i class="bi bi-grid"></i> All products</span>
+            <span><i class="bi bi-funnel"></i> Filter</span>
+          </div>
+
+          <div class="bp-sol-detail-product-grid">
+            <div class="bp-sol-detail-product-item">
+              <div class="bp-sol-detail-product-image product-blue"><i class="bi bi-cpu"></i></div>
+              <strong>Electronic components</strong>
+              <small>Components & parts</small>
+              <span>View details <i class="bi bi-arrow-right"></i></span>
+            </div>
+            <div class="bp-sol-detail-product-item">
+              <div class="bp-sol-detail-product-image product-green"><i class="bi bi-tools"></i></div>
+              <strong>Industrial supplies</strong>
+              <small>Tools & equipment</small>
+              <span>View details <i class="bi bi-arrow-right"></i></span>
+            </div>
+            <div class="bp-sol-detail-product-item">
+              <div class="bp-sol-detail-product-image product-purple"><i class="bi bi-box-seam"></i></div>
+              <strong>Packaging materials</strong>
+              <small>Business essentials</small>
+              <span>View details <i class="bi bi-arrow-right"></i></span>
+            </div>
+            <div class="bp-sol-detail-product-item">
+              <div class="bp-sol-detail-product-image product-orange"><i class="bi bi-gear-wide-connected"></i></div>
+              <strong>Machine parts</strong>
+              <small>Engineering supplies</small>
+              <span>View details <i class="bi bi-arrow-right"></i></span>
+            </div>
+          </div>
+
+          <div class="bp-sol-detail-visual-footer">
+            <i class="bi bi-info-circle"></i>
+            <span>Illustrative product catalog preview</span>
+          </div>
+        </div>
+      </article>
+
+      <!--- Solution 04: Buyer and Supplier Collaboration --->
+      <article class="bp-sol-detail bp-sol-detail-reverse">
+        <div class="bp-sol-detail-content">
+          <div class="bp-sol-detail-number">04 <span>/ 04</span></div>
+          <div class="bp-sol-detail-icon orange"><i class="bi bi-people"></i></div>
+          <span class="bp-sol-detail-label">WORK BETTER TOGETHER</span>
+          <h3>Connect buyers and suppliers. <span>Strengthen collaboration.</span></h3>
+          <p>
+            Create a more connected working experience between buyers and
+            suppliers. Keep business coordination organized and make
+            important procurement conversations easier to manage.
+          </p>
+
+          <ul class="bp-sol-detail-features">
+            <li><i class="bi bi-check-circle-fill"></i> Support buyer and supplier coordination</li>
+            <li><i class="bi bi-check-circle-fill"></i> Keep important business information accessible</li>
+            <li><i class="bi bi-check-circle-fill"></i> Build stronger working relationships</li>
+          </ul>
+
+          <a href="404.html" class="bp-sol-detail-link orange">
+            Discover connected collaboration <i class="bi bi-arrow-up-right"></i>
+          </a>
+        </div>
+
+        <!--- Collaboration Visual --->
+        <div class="bp-sol-detail-visual bp-sol-detail-collab-visual">
+          <div class="bp-sol-detail-visual-heading">
+            <div>
+              <span>BUSINESS COLLABORATION</span>
+              <h4>Better connections, clearer coordination</h4>
+            </div>
+            <span class="bp-sol-detail-visual-menu"><i class="bi bi-three-dots"></i></span>
+          </div>
+
+          <div class="bp-sol-detail-collab-people">
+            <div class="bp-sol-detail-person">
+              <span class="buyer"><i class="bi bi-person-workspace"></i></span>
+              <strong>Buyer team</strong>
+              <small>Purchasing operations</small>
+            </div>
+            <div class="bp-sol-detail-collab-connection">
+              <span></span><i class="bi bi-arrow-left-right"></i><span></span>
+            </div>
+            <div class="bp-sol-detail-person">
+              <span class="supplier"><i class="bi bi-buildings"></i></span>
+              <strong>Supplier team</strong>
+              <small>Business partners</small>
+            </div>
+          </div>
+
+          <div class="bp-sol-detail-message">
+            <div class="bp-sol-detail-message-icon"><i class="bi bi-chat-square-text"></i></div>
+            <div>
+              <strong>Procurement coordination</strong>
+              <p>Keep conversations and business activities connected.</p>
+            </div>
+            <i class="bi bi-check-circle-fill"></i>
+          </div>
+
+          <div class="bp-sol-detail-collab-benefits">
+            <span><i class="bi bi-link-45deg"></i> Connected teams</span>
+            <span><i class="bi bi-chat-dots"></i> Clear communication</span>
+          </div>
+
+          <div class="bp-sol-detail-visual-footer">
+            <i class="bi bi-info-circle"></i>
+            <span>Illustrative collaboration preview</span>
+          </div>
+        </div>
+      </article>
+
+      <!--- Showcase Bottom CTA --->
+      <div class="bp-sol-details-bottom">
+        <div>
+          <span class="bp-sol-details-bottom-icon"><i class="bi bi-lightning-charge"></i></span>
+          <div>
+            <strong>One platform. Multiple possibilities.</strong>
+            <p>Discover how Stackly can support your procurement workflow.</p>
+          </div>
+        </div>
+        <a href="404.html">Discuss your requirements <i class="bi bi-arrow-up-right"></i></a>
+      </div>
+
+    </div>
+  </section>
+  <!--- Detailed Solution Showcase Section End --->
+
+  <!--- CTA Section Start --->
+  <section class="bp-abt-cta-section">
+    <div class="bp-abt-cta-bg"></div>
+    <div class="bp-abt-cta-overlay"></div>
+    <div class="bp-abt-cta-grid"></div>
+
+    <div class="container bp-abt-cta-container">
+      <div class="bp-abt-cta-content">
+        <span class="bp-abt-cta-eyebrow">
+          <span class="bp-abt-cta-eyebrow-dot"></span>
+          YOUR NEXT CHAPTER STARTS HERE
+        </span>
+
+        <h2 class="bp-abt-cta-title">
+          Ready to make procurement
+          <span>work better?</span>
+        </h2>
+
+        <p class="bp-abt-cta-description">
+          Bring your purchasing process, supplier relationships and business operations
+          together with Stackly. Let's build a smarter way to do business.
+        </p>
+
+        <div class="bp-abt-cta-actions">
+          <a href="404.html" class="bp-abt-cta-primary">
+            <span>Get started with Stackly</span>
+            <i class="bi bi-arrow-up-right"></i>
+          </a>
+          <a href="404.html" class="bp-abt-cta-secondary">
+            <i class="bi bi-chat-dots"></i>
+            <span>Talk to our team</span>
+          </a>
+        </div>
+
+        <div class="bp-abt-cta-trust">
+          <div class="bp-abt-cta-trust-icon">
+            <i class="bi bi-shield-check"></i>
+          </div>
+          <span>Built for better business relationships and smarter purchasing.</span>
+        </div>
+      </div>
+
+      <!--- CTA Floating Information Card --->
+      <div class="bp-abt-cta-visual">
+        <div class="bp-abt-cta-orbit bp-abt-cta-orbit-one"></div>
+        <div class="bp-abt-cta-orbit bp-abt-cta-orbit-two"></div>
+
+        <div class="bp-abt-cta-card">
+          <div class="bp-abt-cta-card-top">
+            <div class="bp-abt-cta-card-brand">
+              <span class="bp-abt-cta-card-brand-icon">
+                <i class="bi bi-box-seam"></i>
+              </span>
+              <span>Stackly Workspace</span>
+            </div>
+            <span class="bp-abt-cta-card-status">
+              <span></span> Connected
+            </span>
+          </div>
+
+          <div class="bp-abt-cta-card-heading">
+            <span>Your procurement ecosystem</span>
+            <h3>Everything working together.</h3>
+          </div>
+
+          <div class="bp-abt-cta-card-flow">
+            <div class="bp-abt-cta-flow-item">
+              <span class="bp-abt-cta-flow-icon">
+                <i class="bi bi-cart3"></i>
+              </span>
+              <div>
+                <strong>Purchasing</strong>
+                <small>Organized orders</small>
+              </div>
+              <i class="bi bi-check-circle-fill"></i>
+            </div>
+
+            <div class="bp-abt-cta-flow-connector">
+              <span></span>
+            </div>
+
+            <div class="bp-abt-cta-flow-item">
+              <span class="bp-abt-cta-flow-icon">
+                <i class="bi bi-buildings"></i>
+              </span>
+              <div>
+                <strong>Suppliers</strong>
+                <small>Stronger connections</small>
+              </div>
+              <i class="bi bi-check-circle-fill"></i>
+            </div>
+
+            <div class="bp-abt-cta-flow-connector">
+              <span></span>
+            </div>
+
+            <div class="bp-abt-cta-flow-item">
+              <span class="bp-abt-cta-flow-icon">
+                <i class="bi bi-graph-up-arrow"></i>
+              </span>
+              <div>
+                <strong>Business growth</strong>
+                <small>Better visibility</small>
+              </div>
+              <i class="bi bi-check-circle-fill"></i>
+            </div>
+          </div>
+
+          <div class="bp-abt-cta-card-footer">
+            <span><i class="bi bi-stars"></i> One connected workspace</span>
+            <i class="bi bi-arrow-up-right"></i>
+          </div>
+        </div>
+
+        <div class="bp-abt-cta-floating bp-abt-cta-floating-one">
+          <span><i class="bi bi-arrow-repeat"></i></span>
+          <div>
+            <strong>Work smarter</strong>
+            <small>Stay connected</small>
+          </div>
+        </div>
+
+        <div class="bp-abt-cta-floating bp-abt-cta-floating-two">
+          <i class="bi bi-diagram-3"></i>
+          <span>Connected business</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="bp-abt-cta-bottom">
+      <span>SIMPLIFY THE PROCESS</span>
+      <span class="bp-abt-cta-bottom-line"></span>
+      <span>STRENGTHEN THE CONNECTIONS</span>
+      <span class="bp-abt-cta-bottom-line"></span>
+      <span>MOVE BUSINESS FORWARD</span>
+    </div>
+  </section>
+  <!--- CTA Section End --->
+
+  <!--- Footer Component --->
+  <div id="bp-com-footer-container"></div>
+
+  <!--- Js Files --->
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/loader.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/footer.js"></script>
+
+  <!-- Page JS -->
+  <script src="assets/js/solutions.js"></script>
+  <script src="assets/js/all-hero.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Stackly</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+
+<body class="bp-dash-body">
+
+    <!--- Dashboard Layout --->
+    <div class="bp-dash-layout">
+
+        <!--- Sidebar Overlay --->
+        <div class="bp-dash-overlay" id="bp-dash-overlay"></div>
+
+        <!--- Sidebar --->
+        <aside class="bp-dash-sidebar" id="bp-dash-sidebar">
+
+            <!--- Sidebar Logo --->
+            <div class="bp-dash-sidebar-brand">
+                <a href="index.html" class="bp-dash-brand-link">
+                    <img src="assets/images/brand-logo.webp" alt="">
+                </a>
+                <button type="button" class="bp-dash-sidebar-close" id="bp-dash-sidebar-close"
+                    aria-label="Close sidebar">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+
+            <!--- Mobile User Information --->
+            <div class="bp-dash-mobile-user">
+                <div class="bp-dash-mobile-avatar">
+                    <img src="assets/images/profile-2.webp" alt="">
+                </div>
+                <div class="bp-dash-mobile-user-info">
+                    <span class="bp-dash-user-label">Logged in as</span>
+                    <span class="bp-dash-mobile-email" id="bp-dashboard-sidebar-email">user@example.com</span>
+                </div>
+            </div>
+
+            <!--- Sidebar Navigation --->
+            <nav class="bp-dash-navigation">
+                <span class="bp-dash-nav-heading">WORKSPACE</span>
+
+                <a href="client-dashboard.html" class="bp-dash-nav-link">
+                    <i class="bi bi-grid-1x2"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="client-suppliers.html" class="bp-dash-nav-link">
+                    <i class="bi bi-buildings"></i>
+                    <span>Suppliers</span>
+                </a>
+
+                <a href="client-products.html" class="bp-dash-nav-link">
+                    <i class="bi bi-box-seam"></i>
+                    <span>Products</span>
+                </a>
+
+                <a href="client-purchase-orders.html" class="bp-dash-nav-link bp-dash-nav-active">
+                    <i class="bi bi-receipt"></i>
+                    <span>Purchase Orders</span>
+                </a>
+
+                <div class="bp-dash-nav-spacer"></div>
+
+                <!--- Logout --->
+                <button type="button" class="bp-dash-nav-link bp-dash-logout" id="bp-dashboard-logout">
+                    <i class="bi bi-box-arrow-right"></i>
+                    <span>Logout</span>
+                </button>
+            </nav>
+
+            <!--- Sidebar Footer --->
+            <div class="bp-dash-sidebar-footer">
+                <div class="bp-dash-sidebar-footer-icon">
+                    <i class="bi bi-shield-check"></i>
+                </div>
+                <div>
+                    <span class="bp-dash-sidebar-footer-title">Stackly Workspace</span>
+                    <span class="bp-dash-sidebar-footer-text">Procurement made simpler.</span>
+                </div>
+            </div>
+        </aside>
+
+        <!--- Main Area --->
+        <div class="bp-dash-main">
+
+            <!--- Topbar --->
+            <header class="bp-dash-topbar">
+
+                <!--- Topbar Left --->
+                <div class="bp-dash-topbar-left">
+                    <button type="button" class="bp-dash-menu-toggle" id="bp-dash-menu-toggle" aria-label="Open sidebar"
+                        aria-expanded="false">
+                        <i class="bi bi-three-dots"></i>
+                    </button>
+                    <div class="bp-dash-page-heading">
+                        <span class="bp-dash-page-eyebrow">WORKSPACE</span>
+                        <h1 id="bp-dash-page-title">Dashboard</h1>
+                    </div>
+                </div>
+
+                <!--- Topbar Right --->
+                <div class="bp-dash-topbar-right">
+                    <div class="bp-dash-topbar-email">
+                        <i class="bi bi-envelope"></i>
+                        <span id="bp-dashboard-user-email">user@example.com</span>
+                    </div>
+
+                    <div class="bp-dash-profile-wrap">
+                        <button type="button" class="bp-dash-profile-button" id="bp-dash-profile-button"
+                            aria-label="Open profile">
+                            <span class="bp-dash-profile-avatar">
+                                <img src="assets/images/profile-2.webp" alt="">
+                            </span>
+                            <i class="bi bi-chevron-down bp-dash-profile-chevron"></i>
+                        </button>
+                        <div class="bp-dash-profile-dropdown" id="bp-dash-profile-dropdown">
+                            <div class="bp-dash-profile-dropdown-info">
+                                <strong id="bp-dash-profile-name">My Account</strong>
+                                <span id="bp-dash-profile-dropdown-email">user@example.com</span>
+                            </div>
+                            <a href="404.html"><i class="bi bi-person"></i> My Profile</a>
+                            <button type="button" id="bp-dashboard-profile-logout">
+                                <i class="bi bi-box-arrow-right"></i> Logout
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!--- Dashboard Content --->
+            <main class="bp-dash-content">
+
+                <!--- Client Purchase Orders Section --->
+                <section class="bp-client-orders">
+
+                    <!--- Page Heading --->
+                    <div class="bp-orders-heading">
+                        <div>
+                            <span class="bp-orders-eyebrow">PROCUREMENT MANAGEMENT</span>
+                            <h2>Purchase Orders</h2>
+                            <p>Manage, monitor and keep track of your procurement orders.</p>
+                        </div>
+                        <a href="404.html" class="bp-orders-create-btn">
+                            <i class="bi bi-plus-lg"></i>
+                            Create Purchase Order
+                        </a>
+                    </div>
+
+                    <!--- Order Summary Cards --->
+                    <div class="bp-orders-stats">
+                        <div class="bp-order-stat-card">
+                            <div class="bp-order-stat-top">
+                                <span class="bp-order-stat-icon bp-stat-blue"><i class="bi bi-receipt"></i></span>
+                                <span class="bp-order-stat-label">All Orders</span>
+                            </div>
+                            <h3 id="bp-orders-total">08</h3>
+                            <span class="bp-order-stat-note">Total purchase orders</span>
+                        </div>
+                        <div class="bp-order-stat-card">
+                            <div class="bp-order-stat-top">
+                                <span class="bp-order-stat-icon bp-stat-orange"><i
+                                        class="bi bi-hourglass-split"></i></span>
+                                <span class="bp-order-stat-label">Pending</span>
+                            </div>
+                            <h3 id="bp-orders-pending">02</h3>
+                            <span class="bp-order-stat-note">Awaiting confirmation</span>
+                        </div>
+                        <div class="bp-order-stat-card">
+                            <div class="bp-order-stat-top">
+                                <span class="bp-order-stat-icon bp-stat-purple"><i class="bi bi-truck"></i></span>
+                                <span class="bp-order-stat-label">In Progress</span>
+                            </div>
+                            <h3 id="bp-orders-progress">03</h3>
+                            <span class="bp-order-stat-note">Being processed or shipped</span>
+                        </div>
+                        <div class="bp-order-stat-card">
+                            <div class="bp-order-stat-top">
+                                <span class="bp-order-stat-icon bp-stat-green"><i
+                                        class="bi bi-check2-circle"></i></span>
+                                <span class="bp-order-stat-label">Completed</span>
+                            </div>
+                            <h3 id="bp-orders-completed">02</h3>
+                            <span class="bp-order-stat-note">Successfully delivered</span>
+                        </div>
+                    </div>
+
+                    <!--- Orders Overview --->
+                    <div class="bp-orders-panel">
+
+                        <!--- Orders Toolbar --->
+                        <div class="bp-orders-toolbar">
+                            <div class="bp-orders-toolbar-title">
+                                <h3>All Purchase Orders</h3>
+                                <p>Review and manage your recent orders.</p>
+                            </div>
+                            <div class="bp-orders-toolbar-actions">
+                                <div class="bp-orders-search">
+                                    <i class="bi bi-search"></i>
+                                    <input type="search" id="bp-orders-search" placeholder="Search orders..."
+                                        aria-label="Search purchase orders">
+                                </div>
+                                <button type="button" class="bp-orders-reset-btn" id="bp-orders-reset">
+                                    <i class="bi bi-arrow-counterclockwise"></i>
+                                    Reset
+                                </button>
+                            </div>
+                        </div>
+
+                        <!--- Order Filters --->
+                        <div class="bp-orders-filters">
+                            <div class="bp-orders-filter-group">
+                                <label for="bp-orders-status">Order Status</label>
+                                <select id="bp-orders-status">
+                                    <option value="all">All Statuses</option>
+                                    <option value="pending">Pending</option>
+                                    <option value="confirmed">Confirmed</option>
+                                    <option value="processing">Processing</option>
+                                    <option value="shipped">Shipped</option>
+                                    <option value="delivered">Delivered</option>
+                                    <option value="cancelled">Cancelled</option>
+                                </select>
+                            </div>
+                            <div class="bp-orders-filter-group">
+                                <label for="bp-orders-date">Order Date</label>
+                                <select id="bp-orders-date">
+                                    <option value="all">All Dates</option>
+                                    <option value="30">Last 30 Days</option>
+                                    <option value="90">Last 90 Days</option>
+                                    <option value="365">Last 12 Months</option>
+                                </select>
+                            </div>
+                            <div class="bp-orders-filter-group">
+                                <label for="bp-orders-sort">Sort By</label>
+                                <select id="bp-orders-sort">
+                                    <option value="newest">Newest First</option>
+                                    <option value="oldest">Oldest First</option>
+                                    <option value="highest">Highest Amount</option>
+                                    <option value="lowest">Lowest Amount</option>
+                                </select>
+                            </div>
+                            <div class="bp-orders-results" id="bp-orders-results">Showing 8 orders</div>
+                        </div>
+
+                        <!--- Orders Table --->
+                        <div class="bp-orders-table-wrap">
+                            <table class="bp-orders-table">
+                                <thead>
+                                    <tr>
+                                        <th>ORDER DETAILS</th>
+                                        <th>SUPPLIER</th>
+                                        <th>ORDER DATE</th>
+                                        <th>DELIVERY DATE</th>
+                                        <th>AMOUNT</th>
+                                        <th>STATUS</th>
+                                        <th>ACTION</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="bp-orders-table-body">
+
+                                    <tr data-id="PO-2026-008" data-name="Dell Latitude Laptop"
+                                        data-supplier="TechWorld Solutions" data-status="processing"
+                                        data-date="2026-10-28" data-amount="185000">
+                                        <td>
+                                            <div class="bp-order-product">
+                                                <span class="bp-order-product-icon"><i class="bi bi-laptop"></i></span>
+                                                <div><strong>PO-2026-008</strong><span>Dell Latitude Laptop</span></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="bp-order-supplier">TechWorld Solutions</span></td>
+                                        <td>28 Oct 2026</td>
+                                        <td>08 Nov 2026</td>
+                                        <td><strong class="bp-order-amount">₹1,85,000</strong></td>
+                                        <td><span class="bp-order-status bp-status-processing">Processing</span></td>
+                                        <td><a href="404.html" class="bp-order-action"
+                                                aria-label="View order PO-2026-008"><i
+                                                    class="bi bi-arrow-up-right"></i></a></td>
+                                    </tr>
+
+                                    <tr data-id="PO-2026-007" data-name="Office Ergonomic Chairs"
+                                        data-supplier="Comfort Office Furniture" data-status="shipped"
+                                        data-date="2026-10-24" data-amount="72000">
+                                        <td>
+                                            <div class="bp-order-product">
+                                                <span class="bp-order-product-icon"><i
+                                                        class="bi bi-person-workspace"></i></span>
+                                                <div><strong>PO-2026-007</strong><span>Office Ergonomic Chairs</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><span class="bp-order-supplier">Comfort Office Furniture</span></td>
+                                        <td>24 Oct 2026</td>
+                                        <td>05 Nov 2026</td>
+                                        <td><strong class="bp-order-amount">₹72,000</strong></td>
+                                        <td><span class="bp-order-status bp-status-shipped">Shipped</span></td>
+                                        <td><a href="404.html" class="bp-order-action"
+                                                aria-label="View order PO-2026-007"><i
+                                                    class="bi bi-arrow-up-right"></i></a></td>
+                                    </tr>
+
+                                    <tr data-id="PO-2026-006" data-name="Industrial Air Compressor"
+                                        data-supplier="Prime Industrial Supplies" data-status="confirmed"
+                                        data-date="2026-10-20" data-amount="95000">
+                                        <td>
+                                            <div class="bp-order-product">
+                                                <span class="bp-order-product-icon"><i class="bi bi-gear"></i></span>
+                                                <div><strong>PO-2026-006</strong><span>Industrial Air Compressor</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><span class="bp-order-supplier">Prime Industrial Supplies</span></td>
+                                        <td>20 Oct 2026</td>
+                                        <td>12 Nov 2026</td>
+                                        <td><strong class="bp-order-amount">₹95,000</strong></td>
+                                        <td><span class="bp-order-status bp-status-confirmed">Confirmed</span></td>
+                                        <td><a href="404.html" class="bp-order-action"
+                                                aria-label="View order PO-2026-006"><i
+                                                    class="bi bi-arrow-up-right"></i></a></td>
+                                    </tr>
+
+                                    <tr data-id="PO-2026-005" data-name="Packaging Materials"
+                                        data-supplier="PackRight Industries" data-status="delivered"
+                                        data-date="2026-10-15" data-amount="28500">
+                                        <td>
+                                            <div class="bp-order-product">
+                                                <span class="bp-order-product-icon"><i
+                                                        class="bi bi-box-seam"></i></span>
+                                                <div><strong>PO-2026-005</strong><span>Packaging Materials</span></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="bp-order-supplier">PackRight Industries</span></td>
+                                        <td>15 Oct 2026</td>
+                                        <td>22 Oct 2026</td>
+                                        <td><strong class="bp-order-amount">₹28,500</strong></td>
+                                        <td><span class="bp-order-status bp-status-delivered">Delivered</span></td>
+                                        <td><a href="404.html" class="bp-order-action"
+                                                aria-label="View order PO-2026-005"><i
+                                                    class="bi bi-arrow-up-right"></i></a></td>
+                                    </tr>
+
+                                    <tr data-id="PO-2026-004" data-name="Safety Helmets and Gloves"
+                                        data-supplier="SafeGuard Equipments" data-status="pending"
+                                        data-date="2026-10-10" data-amount="16500">
+                                        <td>
+                                            <div class="bp-order-product">
+                                                <span class="bp-order-product-icon"><i
+                                                        class="bi bi-shield-check"></i></span>
+                                                <div><strong>PO-2026-004</strong><span>Safety Helmets and Gloves</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><span class="bp-order-supplier">SafeGuard Equipments</span></td>
+                                        <td>10 Oct 2026</td>
+                                        <td>Pending confirmation</td>
+                                        <td><strong class="bp-order-amount">₹16,500</strong></td>
+                                        <td><span class="bp-order-status bp-status-pending">Pending</span></td>
+                                        <td><a href="404.html" class="bp-order-action"
+                                                aria-label="View order PO-2026-004"><i
+                                                    class="bi bi-arrow-up-right"></i></a></td>
+                                    </tr>
+
+                                    <tr data-id="PO-2026-003" data-name="Laser Office Printer"
+                                        data-supplier="TechWorld Solutions" data-status="delivered"
+                                        data-date="2026-09-28" data-amount="42500">
+                                        <td>
+                                            <div class="bp-order-product">
+                                                <span class="bp-order-product-icon"><i class="bi bi-printer"></i></span>
+                                                <div><strong>PO-2026-003</strong><span>Laser Office Printer</span></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="bp-order-supplier">TechWorld Solutions</span></td>
+                                        <td>28 Sep 2026</td>
+                                        <td>06 Oct 2026</td>
+                                        <td><strong class="bp-order-amount">₹42,500</strong></td>
+                                        <td><span class="bp-order-status bp-status-delivered">Delivered</span></td>
+                                        <td><a href="404.html" class="bp-order-action"
+                                                aria-label="View order PO-2026-003"><i
+                                                    class="bi bi-arrow-up-right"></i></a></td>
+                                    </tr>
+
+                                    <tr data-id="PO-2026-002" data-name="Office Storage Cabinets"
+                                        data-supplier="Comfort Office Furniture" data-status="cancelled"
+                                        data-date="2026-09-15" data-amount="34000">
+                                        <td>
+                                            <div class="bp-order-product">
+                                                <span class="bp-order-product-icon"><i class="bi bi-archive"></i></span>
+                                                <div><strong>PO-2026-002</strong><span>Office Storage Cabinets</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><span class="bp-order-supplier">Comfort Office Furniture</span></td>
+                                        <td>15 Sep 2026</td>
+                                        <td>Cancelled</td>
+                                        <td><strong class="bp-order-amount">₹34,000</strong></td>
+                                        <td><span class="bp-order-status bp-status-cancelled">Cancelled</span></td>
+                                        <td><a href="404.html" class="bp-order-action"
+                                                aria-label="View order PO-2026-002"><i
+                                                    class="bi bi-arrow-up-right"></i></a></td>
+                                    </tr>
+
+                                    <tr data-id="PO-2026-001" data-name="Network Switches"
+                                        data-supplier="NetCore Technologies" data-status="pending"
+                                        data-date="2026-08-18" data-amount="21500">
+                                        <td>
+                                            <div class="bp-order-product">
+                                                <span class="bp-order-product-icon"><i
+                                                        class="bi bi-hdd-network"></i></span>
+                                                <div><strong>PO-2026-001</strong><span>Network Switches</span></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="bp-order-supplier">NetCore Technologies</span></td>
+                                        <td>18 Aug 2026</td>
+                                        <td>Pending confirmation</td>
+                                        <td><strong class="bp-order-amount">₹21,500</strong></td>
+                                        <td><span class="bp-order-status bp-status-pending">Pending</span></td>
+                                        <td><a href="404.html" class="bp-order-action"
+                                                aria-label="View order PO-2026-001"><i
+                                                    class="bi bi-arrow-up-right"></i></a></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                            <!--- Empty State --->
+                            <div class="bp-orders-empty" id="bp-orders-empty" hidden>
+                                <span><i class="bi bi-receipt-cutoff"></i></span>
+                                <h4>No purchase orders found</h4>
+                                <p>Try changing your search or filter options.</p>
+                                <button type="button" id="bp-orders-empty-reset">Clear Filters</button>
+                            </div>
+                        </div>
+
+                        <!--- Table Footer --->
+                        <div class="bp-orders-table-footer">
+                            <span id="bp-orders-footer-count">Showing 8 of 8 orders</span>
+                            <span class="bp-orders-demo-note"><i class="bi bi-info-circle"></i> Sample order data</span>
+                        </div>
+                    </div>
+
+                    <!--- Purchase Order Information --->
+                    <div class="bp-orders-info-banner">
+                        <div class="bp-orders-info-icon"><i class="bi bi-lightbulb"></i></div>
+                        <div>
+                            <strong>Keep your procurement organized</strong>
+                            <p>Monitor order progress, check supplier updates and stay informed about expected
+                                deliveries from one workspace.</p>
+                        </div>
+                        <a href="404.html">Learn more <i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+
+                </section>
+
+                <!--- Dashboard Copyright --->
+                <footer class="bp-dash-content-footer">
+                    <span>© <span id="bp-dash-footer-year"></span> Stackly. All rights reserved.</span>
+                    <span>Built for better business buying.</span>
+                </footer>
+
+            </main>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/client-orders.js"></script>
+</body>
+
+</html>
