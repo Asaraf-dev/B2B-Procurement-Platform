@@ -127,3 +127,14 @@
 @media (prefers-reduced-motion:reduce) {
   .bp-com-footer * {scroll-behavior: auto !important;animation: none !important;transition-duration: .01ms !important;}
 }
+
+/*--- Footer Contact Information ---*/
+.bp-com-footer-contact-details{display:flex;flex-direction:column;gap:10px;}
+.bp-com-footer-contact-item{display:flex;align-items:center;gap:12px;padding:10px;border:1px solid rgba(255,255,255,.12);border-radius:10px;background:rgba(255,255,255,.035);text-decoration:none;transition:.3s}
+.bp-com-footer-contact-item:hover{background:rgba(255,255,255,.09);border-color:rgba(40,85,232,.6);transform:translateX(4px)}
+.bp-com-footer-contact-icon{width:37px;height:37px;flex-shrink:0;display:flex;align-items:center;justify-content:center;border-radius:9px;background:rgba(40,85,232,.16);color:#6d91ff;font-size:16px}
+.bp-com-footer-contact-info{display:flex;flex-direction:column;gap:4px;flex:1;min-width:0}
+.bp-com-footer-contact-info small{font-size:10px;color:#9aafd3}
+.bp-com-footer-contact-info strong{font-size:10px;font-weight:600;color:#fff;overflow-wrap:anywhere}
+.bp-com-footer-contact-arrow{font-size:13px;color:#8da9f7;transition:.3s}
+.bp-com-footer-contact-item:hover .bp-com-footer-contact-arrow{transform:translate(3px,-3px);color:#fff}

@@ -417,6 +417,10 @@ function bpAsupInit() {
             if (field.id === "bp-asup-email") {
                 valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
             }
+            
+            if (field.id === "bp-asup-contact") {
+                valid = /^[A-Za-z\s]+$/.test(value);
+            }
 
             if (field.id === "bp-asup-phone") {
                 valid = /^[0-9]{10}$/.test(value);
@@ -437,6 +441,12 @@ function bpAsupInit() {
 
         return bpAsupIsValid;
     }
+
+    /*--- Contact Person Alphabet Restriction ---*/
+    document.getElementById("bp-asup-contact").addEventListener("input", function () {
+        this.value = this.value.replace(/[^A-Za-z\s]/g, "");
+        document.getElementById("bp-asup-contact-error").textContent = "";
+    });
 
     /*--- Phone Input Restriction ---*/
     document.getElementById("bp-asup-phone").addEventListener("input", function () {
